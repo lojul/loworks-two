@@ -10,15 +10,11 @@
           <a href="{{ $cover.button.href }}" class="btn btn-success mr-3">{{ $cover.button.text }}</a>
           <a href="{{ $cover.alt_href }}" class="text-muted">{{ $cover.alt_text }}</a>
       </div>
-      
+
       <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-right">
-          <img class="" style="max-width: 100%" src="{{ .Site.BaseURL }}/images/covers/{{ $cover.illustration }}">
+          <img class="" style="max-width: 100%" src="{{ .Site.BaseURL }}{{ $cover.illustration }}">
       </div>
     </div>
-    
+
   </div>
 </section>
-
-<style type="text/css">
-
-</style>
