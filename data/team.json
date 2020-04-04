@@ -5,7 +5,7 @@
     {
       "name" : "Sarita",
       "description" : "CEO",
-      "avatar" : "sarita.jpeg",
+      "avatar" : "images/sarita.jpeg",
       "social" : {
         "facebook" : "https://facebook.com/damn",
         "instagram" : "https://instagram.com/damn",
@@ -15,7 +15,7 @@
     {
       "name" : "Veronica",
       "description" : "Graphics Designer",
-      "avatar" : "veronica.jpeg",
+      "avatar" : "images/veronica.jpeg",
       "social" : {
         "twitter" : "https://twitter.com/damn",
         "instagram" : "https://instagram.com/damn",
@@ -25,7 +25,7 @@
     {
       "name" : "John",
       "description" : "Graphics Designer",
-      "avatar" : "john.jpeg",
+      "avatar" : "images/john.jpeg",
       "social" : {
         "linkedin" : "https://linkedin.com/damn",
         "instagram" : "https://instagram.com/damn",

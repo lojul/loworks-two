@@ -18,7 +18,7 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: 'Image', name: 'illustration', widget: 'image', required: true, default: "/images/covers/freelancing.svg" }
+          - {label: 'Image', name: 'illustration', widget: 'image', required: true, default: "images/covers/freelancing.svg" }
     - file: "data/features.json"
       label: "Services"
       name: "Services"
@@ -47,7 +47,6 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: 'Image', name: 'illustration', widget: 'image', required: true, default: "/images/covers/freelancing.svg" }
     - file: "data/contact.json"
       label: "Contact"
       name: "Contact"

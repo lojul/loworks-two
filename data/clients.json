@@ -4,15 +4,15 @@
   "clients" : [
     {
       "title" : "Produthunt",
-      "image" : "producthunt.png"
+      "image" : "images/producthunt.png"
     },
     {
       "title" : "Google",
-      "image" : "google.png"
+      "image" : "images/google.png"
     },
     {
       "title" : "Facebook",
-      "image" : "facebook.png"
+      "image" : "images/facebook.png"
     }
   ]
 }
