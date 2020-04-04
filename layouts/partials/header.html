@@ -21,16 +21,14 @@
 	<meta name="og:description" content="{{ .Params.description }}"/>
 	{{ end }}
 	<meta name="og:site_name" content="{{ .Site.Title }}"/>
-		
+
 
     <!-- including bootstrap -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/compiled.css"> -->
-
 
     {{ $sass := resources.Get "/scss/bootstrap.scss" }}
-    {{ $style := $sass | resources.ToCSS | resources.Minify}} 
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}"> 
+    {{ $style := $sass | resources.ToCSS | resources.Minify}}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   </head>
   <body>
-    
+
