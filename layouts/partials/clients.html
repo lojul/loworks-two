@@ -5,12 +5,15 @@
     <p class="text-muted pb-5">{{ $clients.description }}</p>
     <div>
       <div class="row justify-content-center align-items-center">
-        {{ range $clients.clients }}
-          <div class="col-lg-3 col-md-4 col-8 mb-4">
-              <img style="max-width:100%" src="{{.Site.BaseURL}}{{.image }}" alt="{{ .title }}">
-          </div>
-
-        {{ end }}
+        <div class="col-lg-3 col-md-4 col-8 mb-4">
+          <img style="max-width:100%" src="{{.Site.BaseURL}}{{ $clients.image1 }}" alt="{{ $clients.title1 }}">
+        </div>
+        <div class="col-lg-3 col-md-4 col-8 mb-4">
+          <img style="max-width:100%" src="{{.Site.BaseURL}}{{ $clients.image2 }}" alt="{{ $clients.title2 }}">
+        </div>
+        <div class="col-lg-3 col-md-4 col-8 mb-4">
+          <img style="max-width:100%" src="{{.Site.BaseURL}}{{ $clients.image3 }}" alt="{{ $clients.title3 }}">
+        </div>
       </div>
     </div>
   </div>

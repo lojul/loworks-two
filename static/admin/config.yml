@@ -11,6 +11,13 @@ collections:
     editor:
       preview: true
     files:
+    - file: "config.toml" # The path to the folder where the documents are stored
+      label: "Site"
+      name: "Site"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
     - file: "data/cover.json" # The path to the folder where the documents are stored
       label: "Header"
       name: "Header"
@@ -47,6 +54,9 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: "Client Title1", name: "title1", widget: "string", required: true }
+          - {label: "Client Title2", name: "title2", widget: "string", required: true }
+          - {label: "Client Title3", name: "title3", widget: "string", required: true }
     - file: "data/contact.json"
       label: "Contact"
       name: "Contact"

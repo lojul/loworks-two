@@ -1,18 +1,10 @@
 {
   "title" : "Some of our awesome clients",
   "description" : "These are just sample logos",
-  "clients" : [
-    {
-      "title" : "Produthunt",
-      "image" : "images/producthunt.png"
-    },
-    {
-      "title" : "Google",
-      "image" : "images/google.png"
-    },
-    {
-      "title" : "Facebook",
-      "image" : "images/facebook.png"
-    }
-  ]
+  "title1" : "Produthunt",
+  "image1" : "images/producthunt.png",
+  "title2" : "Google",
+  "image2" : "images/google.png",
+  "title3" : "Facebook",
+  "image3" : "images/facebook.png"
 }
