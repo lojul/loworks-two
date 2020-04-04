@@ -5,9 +5,9 @@ media_folder: static/images
 public_folder: /images
 collections:
   - name: "pages1" # Used in routes, e.g., /admin/collections/post
-    label: "Header" # Used in the UI
+    label: "Setting" # Used in the UI
     create: false # Allow users to create new documents in this collection
-    delete: false
+    delete: false # Disallow users to delete new documents in this collection
     editor:
       preview: true
     files:
@@ -19,3 +19,55 @@ collections:
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Image', name: 'illustration', widget: 'image', required: true, default: "/images/covers/freelancing.svg" }
+    - file: "data/features.json"
+      label: "Services"
+      name: "Services"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+    - file: "data/features.json"
+      label: "Pricing"
+      name: "Pricing"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+    - file: "data/team.json"
+      label: "Team"
+      name: "Team"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+    - file: "data/client.json"
+      label: "Client"
+      name: "Client"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Image', name: 'illustration', widget: 'image', required: true, default: "/images/covers/freelancing.svg" }
+    - file: "data/contact.json"
+      label: "Contact"
+      name: "Contact"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Address", name: "address", widget: "string", required: true }
+          - {label: "Phone", name: "phone", widget: "string", required: true }
+          - {label: "E-mail", name: "email", widget: "string", required: true }
+          - {label: "Formspree", name: "formspree", widget: "string", required: true }
+    - file: "data/footer.json"
+      label: "Footer"
+      name: "Footer"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Copyright Text", name: "footertext", widget: "string", required: true }
+    - file: "data/social.json"
+      label: "Social"
+      name: "Social"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
+          - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
+          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
