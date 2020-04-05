@@ -115,31 +115,31 @@ collections:
       name: "TeamMember1"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: "Title", name: "name", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Image', name: 'avatar', widget: 'image', required: true }
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
-          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
+          - {label: "Linkedin Link", name: "linkedin", widget: "string", required: true }
     - file: "data/team2.json" # The path to the folder where the documents are stored
       label: "Team Member 2"
       name: "TeamMember2"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: "Title", name: "name", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Image', name: 'avatar', widget: 'image', required: true }
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
-          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
+          - {label: "Linkedin Link", name: "linkedin", widget: "string", required: true }
     - file: "data/team3.json" # The path to the folder where the documents are stored
       label: "Team Member 3"
       name: "TeamMember3"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: "Title", name: "name", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Image', name: 'avatar', widget: 'image', required: true }
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
-          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
+          - {label: "Linkedin Link", name: "linkedin", widget: "string", required: true }
