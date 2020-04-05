@@ -2,8 +2,3 @@ baseURL = "https://loworks-two.netlify.com/"
 languageCode = "en-us"
 title = "Loworks Two"
 description = "site description"
-
-[params]
-	logo = "images/logo.svg"
-	favicon = "images/favicon.png"
-	googleAnalytics = "XXXX XXXX"

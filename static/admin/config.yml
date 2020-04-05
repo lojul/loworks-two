@@ -18,16 +18,17 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: 'Logo', name: 'logo', widget: 'image', required: true }
-          - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
           - {label: "Domain Name", name: "baseURL", widget: "string", required: true }
-          - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
           - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us" }
     - file: "data/cover.json" # The path to the folder where the documents are stored
       label: "Header"
       name: "Header"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "brand", name: "brand", widget: "hidden", default: "Green paper"}
+          - {label: 'Logo', name: 'logo', widget: 'image', required: true }
+          - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
+          - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Image', name: 'illustration', widget: 'image', required: true, default: "images/covers/freelancing.svg" }

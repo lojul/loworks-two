@@ -9,12 +9,12 @@
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:700" rel="stylesheet">
-    <link href="{{ "favicon.png" | absURL }}" rel="icon" />
+    <link href="{{ .Site.Data.cover.favicon | absURL }}" rel="icon" />
 
     <!-- og -->
     <meta name="og:title" content="{{ .Title }}"/>
 	<meta name="og:url" content="{{ .Permalink }}"/>
-	<meta name="og:image" content="{{ .Params.logo | absURL}}"/>
+	<meta name="og:image" content="{{ .Site.Data.cover.logo | absURL}}"/>
 	<meta name="og:description" content="{{ .Params.description }}"/>
 	<meta name="og:site_name" content="{{ .Site.Title }}"/>
 
