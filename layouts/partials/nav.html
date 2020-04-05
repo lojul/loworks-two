@@ -1,8 +1,6 @@
 {{ $header := .Site.Data.header }}
-{{- $logoSrc := printf "images/%s" $header.logo | absURL -}}
     <nav class="navbar nav-transparent navbar-expand-lg navbar-light">
-      <!-- <div class="backdrop-blur"></div> -->
-      <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{$logoSrc}}" height="40px"></a>
+      <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{ .Site.Params.logo | absURL }}" height="40px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,17 +12,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{.Site.BaseURL}}{{ .href | relURL }}">{{ .title }}</a>
               </li>
-              
-            
+
+
           {{ end }}
         </ul>
         <ul class="ml-auto navbar-nav">
             {{ range $key, $value := .Site.Data.social }}
             <li class="nav-item" style="font-size: 22px">
-              <a href="{{ $value }}" class="ml-3 text-white btn-{{ $key }}"><i class="fab fa-{{ $key }}"></i></a>
+              <a href="{{ $value }}" class="ml-3 text-white btn-{{ $key }}"><i class="fab fa-{{ $key }}" target="_blank"></i></a>
             </li>
             {{ end }}
-          
+
         </ul>
       </div>
     </nav>

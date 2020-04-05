@@ -1,6 +1,6 @@
 
 
-      {{ $code := .Site.Data.config.googleAnalytics }}
+      {{ $code := .Params.googleAnalytics }}
       {{ if $code }}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ $code }}"></script>
       <script>

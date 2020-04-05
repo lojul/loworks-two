@@ -4,7 +4,7 @@ backend:
 media_folder: static/images
 public_folder: /images
 collections:
-  - name: "pages1" # Used in routes, e.g., /admin/collections/post
+  - name: "Setting" # Used in routes, e.g., /admin/collections/post
     label: "Setting" # Used in the UI
     create: false # Allow users to create new documents in this collection
     delete: false # Disallow users to delete new documents in this collection
@@ -18,6 +18,10 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Logo', name: 'logo', widget: 'image', required: true }
+          - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
+          - {label: "Domain Name", name: "baseURL", widget: "string", required: true }
+          - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
     - file: "data/cover.json" # The path to the folder where the documents are stored
       label: "Header"
       name: "Header"
