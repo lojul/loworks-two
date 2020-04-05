@@ -9,7 +9,7 @@
                     <div class="header bg-light p-3 text-dark">
                         <h5 class="h5 title">{{ $pricing.title1 }}</h5>
                         <span class="price my-3">{{ $pricing.price1 }}</span>
-                        <a href="{{ "/#contact" | absURL }}" class="btn btn-success">Contact</a>
+                        <a href="{{ .Site.BaseURL }}{{ "#contact" }}" class="btn btn-success">Contact</a>
                     </div>
                     <div class="body p-3">
                         <div class="features text-left">
@@ -34,7 +34,7 @@
                     <div class="header bg-light p-3 text-dark">
                         <h5 class="h5 title">{{ $pricing.title2 }}</h5>
                         <span class="price my-3">{{ $pricing.price2 }}</span>
-                        <a href="{{ "/#contact" | absURL }}" class="btn btn-success">Contact</a>
+                        <a href="{{ .Site.BaseURL }}{{ "#contact" }}" class="btn btn-success">Contact</a>
                     </div>
                     <div class="body p-3">
                         <div class="features text-left">

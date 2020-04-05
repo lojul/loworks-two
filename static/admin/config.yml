@@ -22,6 +22,7 @@ collections:
           - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
           - {label: "Domain Name", name: "baseURL", widget: "string", required: true }
           - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
+          - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us" }
     - file: "data/cover.json" # The path to the folder where the documents are stored
       label: "Header"
       name: "Header"
@@ -37,6 +38,15 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: "Services Title 1", name: "title1", widget: "string", required: true }
+          - {label: "Services Icon 1", name: "icon1", widget: "string", required: true }
+          - {label: 'Services Description 1', name: 'description1', widget: 'string', required: true }
+          - {label: "Services Title 2", name: "title2", widget: "string", required: true }
+          - {label: "Services Icon 2", name: "icon2", widget: "string", required: true }
+          - {label: 'Services Description 2', name: 'description2', widget: 'string', required: true }
+           - {label: "Services Title 3", name: "title3", widget: "string", required: true }
+          - {label: "Services Icon 3", name: "icon3", widget: "string", required: true }
+          - {label: 'Services Description 3', name: 'description3', widget: 'string', required: true }
     - file: "data/features.json"
       label: "Pricing"
       name: "Pricing"
@@ -44,6 +54,12 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: "Pricing Title 1", name: "title1", widget: "string", required: true }
+          - {label: "Price 1", name: "price1", widget: "string", required: true }
+          - {label: 'Pricing Description 1', name: 'description1', widget: 'string', required: true }
+          - {label: "Pricing Title 2", name: "title2", widget: "string", required: true }
+          - {label: "Price 2", name: "price2", widget: "string", required: true }
+          - {label: 'Pricing Description 2', name: 'description2', widget: 'string', required: true }
     - file: "data/team.json"
       label: "Team"
       name: "Team"
@@ -59,8 +75,11 @@ collections:
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: "Client Title1", name: "title1", widget: "string", required: true }
+          - {label: 'Client Image1', name: 'image1', widget: 'image', required: true }
           - {label: "Client Title2", name: "title2", widget: "string", required: true }
+          - {label: 'Client Image2', name: 'image2', widget: 'image', required: true }
           - {label: "Client Title3", name: "title3", widget: "string", required: true }
+          - {label: 'Client Image3', name: 'image3', widget: 'image', required: true }
     - file: "data/contact.json"
       label: "Contact"
       name: "Contact"
@@ -81,6 +100,53 @@ collections:
       name: "Social"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
+          - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
+          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
+  - name: "Team" # Used in routes, e.g., /admin/collections/post
+    label: "Team" # Used in the UI
+    create: false # Allow users to create new documents in this collection
+    delete: false # Disallow users to delete new documents in this collection
+    editor:
+      preview: true
+    files:
+    - file: "team.json" # The path to the folder where the documents are stored
+      label: "TeamTitle"
+      name: "TeamTitle"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+    - file: "team1.json" # The path to the folder where the documents are stored
+      label: "TeamMember1"
+      name: "Team Member 1"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Image', name: 'avatar', widget: 'image', required: true }
+          - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
+          - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
+          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
+    - file: "team2.json" # The path to the folder where the documents are stored
+      label: "TeamMember2"
+      name: "Team Member 2"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Image', name: 'avatar', widget: 'image', required: true }
+          - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
+          - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
+          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
+    - file: "team3.json" # The path to the folder where the documents are stored
+      label: "TeamMember3"
+      name: "Team Member 3"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Image', name: 'avatar', widget: 'image', required: true }
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
           - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
