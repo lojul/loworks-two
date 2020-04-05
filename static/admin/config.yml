@@ -47,7 +47,7 @@ collections:
            - {label: "Services Title 3", name: "title3", widget: "string", required: true }
           - {label: "Services Icon 3", name: "icon3", widget: "string", required: true }
           - {label: 'Services Description 3', name: 'description3', widget: 'string', required: true }
-    - file: "data/features.json"
+    - file: "data/pricing.json"
       label: "Pricing"
       name: "Pricing"
       fields:
