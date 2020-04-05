@@ -60,13 +60,6 @@ collections:
           - {label: "Pricing Title 2", name: "title2", widget: "string", required: true }
           - {label: "Price 2", name: "price2", widget: "string", required: true }
           - {label: 'Pricing Description 2', name: 'description2', widget: 'string', required: true }
-    - file: "data/team.json"
-      label: "Team"
-      name: "Team"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
     - file: "data/client.json"
       label: "Client"
       name: "Client"
@@ -110,16 +103,16 @@ collections:
     editor:
       preview: true
     files:
-    - file: "team.json" # The path to the folder where the documents are stored
-      label: "TeamTitle"
+    - file: "data/team.json" # The path to the folder where the documents are stored
+      label: "Team Title and Description"
       name: "TeamTitle"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-    - file: "team1.json" # The path to the folder where the documents are stored
-      label: "TeamMember1"
-      name: "Team Member 1"
+    - file: "data/team1.json" # The path to the folder where the documents are stored
+      label: "Team Member 1"
+      name: "TeamMember1"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
@@ -128,9 +121,9 @@ collections:
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
           - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
-    - file: "team2.json" # The path to the folder where the documents are stored
-      label: "TeamMember2"
-      name: "Team Member 2"
+    - file: "data/team2.json" # The path to the folder where the documents are stored
+      label: "Team Member 2"
+      name: "TeamMember2"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
@@ -139,9 +132,9 @@ collections:
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
           - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
-    - file: "team3.json" # The path to the folder where the documents are stored
-      label: "TeamMember3"
-      name: "Team Member 3"
+    - file: "data/team3.json" # The path to the folder where the documents are stored
+      label: "Team Member 3"
+      name: "TeamMember3"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
