@@ -48,19 +48,6 @@ collections:
           - {label: "Services Title 3", name: "title3", widget: "string", required: true }
           - {label: "Services Icon 3", name: "icon3", widget: "string", required: true }
           - {label: 'Services Description 3', name: 'description3', widget: 'string', required: true }
-    - file: "data/pricing.json"
-      label: "Pricing"
-      name: "Pricing"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: "Pricing Title 1", name: "title1", widget: "string", required: true }
-          - {label: "Price 1", name: "price1", widget: "string", required: true }
-          - {label: 'Pricing Description 1', name: 'description1', widget: 'string', required: true }
-          - {label: "Pricing Title 2", name: "title2", widget: "string", required: true }
-          - {label: "Price 2", name: "price2", widget: "string", required: true }
-          - {label: 'Pricing Description 2', name: 'description2', widget: 'string', required: true }
     - file: "data/client.json"
       label: "Client"
       name: "Client"
@@ -144,3 +131,38 @@ collections:
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
           - {label: "Linkedin Link", name: "linkedin", widget: "string", required: true }
+  - name: "Pricing" # Used in routes, e.g., /admin/collections/post
+    label: "Pricing" # Used in the UI
+    create: false # Allow users to create new documents in this collection
+    delete: false # Disallow users to delete new documents in this collection
+    editor:
+      preview: true
+    files:
+    - file: "data/pricing.json" # The path to the folder where the documents are stored
+      label: "Pricing Title and Description"
+      name: "PricingTitle"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+    - file: "data/pricing1.json" # The path to the folder where the documents are stored
+      label: "Pricing List 1"
+      name: "PricingList1"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "name", widget: "string", required: true }
+          - {label: "Price", name: "price", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
+          - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
+    - file: "data/pricing2.json" # The path to the folder where the documents are stored
+      label: "Pricing List 2"
+      name: "PricingList2"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "name", widget: "string", required: true }
+          - {label: "Price", name: "price", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
+          - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
+          - {label: 'Description 3', name: 'description3', widget: 'string', required: true }
