@@ -1,4 +1,6 @@
 {{ $pricing := .Site.Data.pricing }}
+{{ $pricing1 := .Site.Data.pricing1 }}
+{{ $pricing2 := .Site.Data.pricing2 }}
 <section id="pricing" class="py-5">
     <div class="container text-center">
         <h2 class="pt-5 h2">{{ $pricing.title }}</h2>
@@ -7,23 +9,23 @@
             <div class="col-12 col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="pricing shadow">
                     <div class="header bg-light p-3 text-dark">
-                        <h5 class="h5 title">{{ $pricing.title1 }}</h5>
-                        <span class="price my-3">{{ $pricing.price1 }}</span>
+                        <h5 class="h5 title">{{ $pricing1.title }}</h5>
+                        <span class="price my-3">{{ $pricing1.price }}</span>
                         <a href="{{ .Site.BaseURL }}{{ "#contact" }}" class="btn btn-success">Contact</a>
                     </div>
                     <div class="body p-3">
                         <div class="features text-left">
                             <div class="my-2 text-muted">
                                 <span><i class="fa fa-check text-success"></i></span>
-                                <span>{{ $pricing.description1 }}</span>
+                                <span>{{ $pricing1.description1 }}</span>
                             </div>
                             <div class="my-2 text-muted">
                                 <span><i class="fa fa-check text-success"></i></span>
-                                <span>{{ $pricing.description1 }}</span>
+                                <span>{{ $pricing1.description2 }}</span>
                             </div>
                             <div class="my-2 text-muted">
                                 <span><i class="fa fa-check text-success"></i></span>
-                                <span>{{ $pricing.description1 }}</span>
+                                <span>{{ $pricing1.description3 }}</span>
                             </div>
                         </div>
                     </div>
@@ -32,23 +34,27 @@
             <div class="col-12 col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="pricing shadow">
                     <div class="header bg-light p-3 text-dark">
-                        <h5 class="h5 title">{{ $pricing.title2 }}</h5>
-                        <span class="price my-3">{{ $pricing.price2 }}</span>
+                        <h5 class="h5 title">{{ $pricing2.title }}</h5>
+                        <span class="price my-3">{{ $pricing2.price }}</span>
                         <a href="{{ .Site.BaseURL }}{{ "#contact" }}" class="btn btn-success">Contact</a>
                     </div>
                     <div class="body p-3">
                         <div class="features text-left">
                             <div class="my-2 text-muted">
                                 <span><i class="fa fa-check text-success"></i></span>
-                                <span>{{ $pricing.description2 }}</span>
+                                <span>{{ $pricing2.description }}</span>
                             </div>
                             <div class="my-2 text-muted">
                                 <span><i class="fa fa-check text-success"></i></span>
-                                <span>{{ $pricing.description2 }}</span>
+                                <span>{{ $pricing2.description1 }}</span>
                             </div>
                             <div class="my-2 text-muted">
                                 <span><i class="fa fa-check text-success"></i></span>
-                                <span>{{ $pricing.description2 }}</span>
+                                <span>{{ $pricing2.description2 }}</span>
+                            </div>
+                            <div class="my-2 text-muted">
+                                <span><i class="fa fa-check text-success"></i></span>
+                                <span>{{ $pricing.description3 }}</span>
                             </div>
                         </div>
                     </div>
