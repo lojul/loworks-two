@@ -29,14 +29,14 @@ collections:
             name: en
             label: English Selector Text
             fields:
-              - {label: "languageName", name: "languageName", widget: "string", default: "English", required: true }
+              - {label: "languageName", name: "languageName", widget: "hidden", default: "English", required: true }
               - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us", required: true }
               - {label: "dataDir", name: "dataDir", widget: "hidden", default: "data/en", required: true }
           - widget: object
             name: zh
             label: Chinese Selector Text
             fields:
-              - {label: "languageName", name: "languageName", widget: "string", default: "中文", required: true }
+              - {label: "languageName", name: "languageName", widget: "hidden", default: "中文", required: true }
               - {label: "languageCode", name: "languageCode", widget: "hidden", default: "zh-zh", required: true }
               - {label: "dataDir", name: "dataDir", widget: "hidden", default: "data/zh", required: true }
     - file: "data/site.json" # The path to the folder where the documents are stored
