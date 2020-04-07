@@ -290,7 +290,7 @@ collections:
       name: "PricingList1"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "name", widget: "string", required: true }
+          - {label: "Title", name: "title", widget: "string", required: true }
           - {label: "Price", name: "price", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
@@ -300,7 +300,7 @@ collections:
       name: "PricingList2"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "name", widget: "string", required: true }
+          - {label: "Title", name: "title", widget: "string", required: true }
           - {label: "Price", name: "price", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
@@ -325,7 +325,7 @@ collections:
       name: "PricingList1"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "name", widget: "string", required: true }
+          - {label: "Title", name: "title", widget: "string", required: true }
           - {label: "Price", name: "price", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
@@ -335,7 +335,7 @@ collections:
       name: "PricingList2"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "name", widget: "string", required: true }
+          - {label: "Title", name: "title", widget: "string", required: true }
           - {label: "Price", name: "price", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
