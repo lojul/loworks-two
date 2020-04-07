@@ -9,7 +9,7 @@ disableLanguages = []
 
 ################################ English Language ########################
 [Languages.en]
-languageName = "En"
+languageName = "English"
 languageCode = "en-us"
 dataDir = "data/en"
 

@@ -20,6 +20,14 @@ collections:
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: "Domain Name", name: "baseURL", widget: "string", required: true }
           - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us" }
+    - file: "data/site.json" # The path to the folder where the documents are stored
+      label: "Logo,favicon, Google Analytics"
+      name: "sitelfg"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: 'Logo', name: 'logo', widget: 'image', required: true }
+          - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
+          - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
     - file: "data/en/cover.json" # The path to the folder where the documents are stored
       label: "Header EN"
       name: "HeaderEN"
@@ -105,6 +113,7 @@ collections:
       name: "ContactEN"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
           - {label: "Address", name: "address", widget: "string", required: true }
           - {label: "Phone", name: "phone", widget: "string", required: true }
           - {label: "E-mail", name: "email", widget: "string", required: true }
@@ -114,6 +123,7 @@ collections:
       name: "ContactZH"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
           - {label: "Address", name: "address", widget: "string", required: true }
           - {label: "Phone", name: "phone", widget: "string", required: true }
           - {label: "E-mail", name: "email", widget: "string", required: true }
@@ -130,17 +140,9 @@ collections:
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Copyright Text", name: "footertext", widget: "string", required: true }
-    - file: "data/en/social.json"
-      label: "Social EN"
-      name: "SocialEN"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
-          - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
-          - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
-    - file: "data/zh/social.json"
-      label: "Social ZH"
-      name: "SocialZH"
+    - file: "data/social.json"
+      label: "Social Links for EN and ZH"
+      name: "SocialENZh"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
