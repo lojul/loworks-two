@@ -312,3 +312,21 @@ collections:
           - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
           - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
           - {label: 'Description 3', name: 'description3', widget: 'string', required: true }
+  - name: "LanguageTranslation" # Used in routes, e.g., /admin/collections/post
+    label: "Language Translation" # Used in the UI
+    create: false # Allow  users to create new documents in this collection
+    delete: false # Disallow users to delete new documents in this collection
+    editor:
+      preview: true
+    files:
+      - name: english
+        label: English Translation
+        file: "il8n/en.yaml" # The path to the folder where the documents are stored
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "features", name: "features", widget: "string", required: true }
+          - widget: object
+            name: home
+            label: Home
+            fields:
+              - {widget: string, name: other, label: Other, required: true}
