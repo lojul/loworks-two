@@ -1,4 +1,5 @@
-{{ $contact := .Site.Data.contact }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $contact := $data.contact }}
 
 <section id="contact" class="contact mt-5 p-3 p-lg-5 p-md-5">
 	<div class="container">

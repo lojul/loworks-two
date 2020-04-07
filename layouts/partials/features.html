@@ -1,4 +1,5 @@
-{{ $features := .Site.Data.features }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $features := $data.features }}
 {{ $title := $features.title }}
 {{ $description := $features.description }}
 <section id="features" class="bg-light py-5">

@@ -1,4 +1,5 @@
-{{ $clients := .Site.Data.clients }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $clients := $data.clients }}
 <section class="text-center py-5">
   <div class="container">
     <h2 class="pt-5 h2">{{ $clients.title }}</h2>
@@ -6,13 +7,13 @@
     <div>
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-3 col-md-4 col-8 mb-4">
-          <img style="max-width:100%" src="{{.Site.BaseURL}}{{ $clients.image1 }}" alt="{{ $clients.title1 }}">
+          <img style="max-width:100%" src="{{ $clients.image1 | relURL }}" alt="{{ $clients.title1 }}">
         </div>
         <div class="col-lg-3 col-md-4 col-8 mb-4">
-          <img style="max-width:100%" src="{{.Site.BaseURL}}{{ $clients.image2 }}" alt="{{ $clients.title2 }}">
+          <img style="max-width:100%" src="{{ $clients.image2 | relURL }}" alt="{{ $clients.title2 }}">
         </div>
         <div class="col-lg-3 col-md-4 col-8 mb-4">
-          <img style="max-width:100%" src="{{.Site.BaseURL}}{{ $clients.image3 }}" alt="{{ $clients.title3 }}">
+          <img style="max-width:100%" src="{{ $clients.image3 | relURL }}" alt="{{ $clients.title3 }}">
         </div>
       </div>
     </div>

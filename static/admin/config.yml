@@ -20,21 +20,47 @@ collections:
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: "Domain Name", name: "baseURL", widget: "string", required: true }
           - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us" }
-    - file: "data/cover.json" # The path to the folder where the documents are stored
-      label: "Header"
-      name: "Header"
+    - file: "data/en/cover.json" # The path to the folder where the documents are stored
+      label: "Header EN"
+      name: "HeaderEN"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "brand", name: "brand", widget: "hidden", default: "Green paper"}
           - {label: 'Logo', name: 'logo', widget: 'image', required: true }
           - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
           - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Banner Image', name: 'illustration', widget: 'image', required: true, default: "images/covers/freelancing.svg" }
-    - file: "data/features.json"
-      label: "Services"
-      name: "Services"
+    - file: "data/zh/cover.json" # The path to the folder where the documents are stored
+      label: "Header ZH"
+      name: "HeaderZH"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: 'Logo', name: 'logo', widget: 'image', required: true }
+          - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
+          - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: 'Banner Image', name: 'illustration', widget: 'image', required: true, default: "images/covers/freelancing.svg" }
+    - file: "data/en/features.json"
+      label: "Services EN"
+      name: "ServicesEN"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+          - {label: "Services Title 1", name: "title1", widget: "string", required: true }
+          - {label: "Services Icon 1", name: "icon1", widget: "string", required: true }
+          - {label: 'Services Description 1', name: 'description1', widget: 'string', required: true }
+          - {label: "Services Title 2", name: "title2", widget: "string", required: true }
+          - {label: "Services Icon 2", name: "icon2", widget: "string", required: true }
+          - {label: 'Services Description 2', name: 'description2', widget: 'string', required: true }
+          - {label: "Services Title 3", name: "title3", widget: "string", required: true }
+          - {label: "Services Icon 3", name: "icon3", widget: "string", required: true }
+          - {label: 'Services Description 3', name: 'description3', widget: 'string', required: true }
+    - file: "data/zh/features.json"
+      label: "Services ZH"
+      name: "ServicesZH"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }

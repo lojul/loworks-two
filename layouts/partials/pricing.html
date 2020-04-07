@@ -1,6 +1,7 @@
-{{ $pricing := .Site.Data.pricing }}
-{{ $pricing1 := .Site.Data.pricing1 }}
-{{ $pricing2 := .Site.Data.pricing2 }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $pricing := $data.pricing }}
+{{ $pricing1 := $data.pricing1 }}
+{{ $pricing2 := $data.pricing2 }}
 <section id="pricing" class="py-5">
     <div class="container text-center">
         <h2 class="pt-5 h2">{{ $pricing.title }}</h2>

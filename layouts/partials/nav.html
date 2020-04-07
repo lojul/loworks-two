@@ -1,5 +1,6 @@
-{{ $cover := .Site.Data.cover }}
-{{ $nav := .Site.Data.nav }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $cover := $data.cover }}
+{{ $nav := $data.nav }}
     <nav class="navbar nav-transparent navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{ $cover.logo | absURL }}" height="40px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,6 +18,30 @@
 
           {{ end }}
         </ul>
+        {{- if .Site.IsMultiLingual }}
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  {{ $siteLanguages := .Site.Languages}}
+                  {{ $pageLang := .Page.Lang}}
+                  {{ range .Page.AllTranslations }}
+                  {{ $translation := .}}
+                  {{ range $siteLanguages }}
+                  {{ if eq $translation.Lang .Lang }}
+                  {{ $selected := false }}
+                  {{ if eq $pageLang .Lang}}
+                  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>
+                    {{ .LanguageName }}
+                  </option>
+                  {{ else }}
+                  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}
+                  </option>
+                  {{ end }}
+                  {{ end }}
+                  {{ end }}
+                  {{ end }}
+                </select>
+              </li>
+              {{ end }}
         <ul class="ml-auto navbar-nav">
             {{ range $key, $value := .Site.Data.social }}
             <li class="nav-item" style="font-size: 22px">
