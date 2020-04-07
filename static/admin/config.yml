@@ -24,21 +24,7 @@ collections:
             name: params
             label: Params
             fields:
-              - {widget: "boolean", name: DisableLanguageSwitchingButton, label: DisableLanguageSwitchingButton, required: true}
-          - widget: object
-            name: en
-            label: English Selector Text
-            fields:
-              - {label: "languageName", name: "languageName", widget: "hidden", default: "English", required: true }
-              - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us", required: true }
-              - {label: "dataDir", name: "dataDir", widget: "hidden", default: "data/en", required: true }
-          - widget: object
-            name: zh
-            label: Chinese Selector Text
-            fields:
-              - {label: "languageName", name: "languageName", widget: "hidden", default: "中文", required: true }
-              - {label: "languageCode", name: "languageCode", widget: "hidden", default: "zh-zh", required: true }
-              - {label: "dataDir", name: "dataDir", widget: "hidden", default: "data/zh", required: true }
+              - {widget: "boolean", name: DisableLanguageSwitchingButton, label: DisableLanguageSwitchingButton, required: true}         
     - file: "data/site.json" # The path to the folder where the documents are stored
       label: "Logo,favicon, Google Analytics"
       name: "sitelfg"
