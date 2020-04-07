@@ -7,6 +7,12 @@ disableLanguages = []
 [params]
 DisableLanguageSwitchingButton = "false"
 
+[en]
+languageName = "english"
+
+[zh]
+languageName = "chinese"
+
 [Languages]
 
 [Languages.en]
