@@ -99,7 +99,7 @@ collections:
           - {label: "Services Title 3", name: "title3", widget: "string", required: true }
           - {label: "Services Icon 3", name: "icon3", widget: "string", required: true }
           - {label: 'Services Description 3', name: 'description3', widget: 'string', required: true }
-    - file: "data/en/client.json"
+    - file: "data/en/clients.json"
       label: "Client EN"
       name: "ClientEN"
       fields:
@@ -112,7 +112,7 @@ collections:
           - {label: 'Client Image2', name: 'image2', widget: 'image', required: true }
           - {label: "Client Title3", name: "title3", widget: "string", required: true }
           - {label: 'Client Image3', name: 'image3', widget: 'image', required: true }
-    - file: "data/zh/client.json"
+    - file: "data/zh/clients.json"
       label: "Client ZH"
       name: "ClientZH"
       fields:
@@ -134,14 +134,14 @@ collections:
           - {label: "Address", name: "address", widget: "string", required: true }
           - {label: "Phone", name: "phone", widget: "string", required: true }
           - {label: "E-mail", name: "email", widget: "string", required: true }
-          - {label: "addresstext", name: "Address text", widget: "string", required: true }
-          - {label: "emailtext", name: "Email text", widget: "string", required: true }
-          - {label: "phonetext", name: "phone text", widget: "string", required: true }
-          - {label: "yourname", name: "Your Name text", widget: "string", required: true }
-          - {label: "youremail", name: "Your Email text", widget: "string", required: true }
-          - {label: "yourmessage", name: "Your Message text", widget: "string", required: true }
-          - {label: "submitbtn", name: "Submit button Textt", widget: "string", required: true }
-    - file: "data//zh/contact.json"
+          - {label: "Address text", name: "addresstext", widget: "string", required: true }
+          - {label: "Email text", name: "emailtext", widget: "string", required: true }
+          - {label: "phone text", name: "phonetext", widget: "string", required: true }
+          - {label: "Your Name text", name: "yourname", widget: "string", required: true }
+          - {label: "Your Email text", name: "youremail", widget: "string", required: true }
+          - {label: "Your Message text", name: "yourmessage", widget: "string", required: true }
+          - {label: "Submit button Text", name: "submitbtn", widget: "string", required: true }
+    - file: "data/zh/contact.json"
       label: "Contact ZH"
       name: "ContactZH"
       fields:
@@ -150,13 +150,13 @@ collections:
           - {label: "Address", name: "address", widget: "string", required: true }
           - {label: "Phone", name: "phone", widget: "string", required: true }
           - {label: "E-mail", name: "email", widget: "string", required: true }
-          - {label: "addresstext", name: "Address text", widget: "string", required: true }
-          - {label: "emailtext", name: "Email text", widget: "string", required: true }
-          - {label: "phonetext", name: "phone text", widget: "string", required: true }
-          - {label: "yourname", name: "Your Name text", widget: "string", required: true }
-          - {label: "youremail", name: "Your Email text", widget: "string", required: true }
-          - {label: "yourmessage", name: "Your Message text", widget: "string", required: true }
-          - {label: "submitbtn", name: "Submit button Textt", widget: "string", required: true }
+          - {label: "Address text", name: "addresstext", widget: "string", required: true }
+          - {label: "Email text", name: "emailtext", widget: "string", required: true }
+          - {label: "phone text", name: "phonetext", widget: "string", required: true }
+          - {label: "Your Name text", name: "yourname", widget: "string", required: true }
+          - {label: "Your Email text", name: "youremail", widget: "string", required: true }
+          - {label: "Your Message text", name: "yourmessage", widget: "string", required: true }
+          - {label: "Submit button Text", name: "submitbtn", widget: "string", required: true }
     - file: "data/en/footer.json"
       label: "Footer EN"
       name: "FooterEN"
