@@ -1,20 +1,10 @@
 {
-  "links" : [
-    {
-      "title" : "Home",
-      "href" : ""
-    },
-    {
-      "title" : "Services",
-      "href" : "#features"
-    },
-    {
-      "title" : "Pricing",
-      "href" : "#pricing"
-    },
-    {
-      "title" : "Contact",
-      "href" : "#contact"
-    }
-  ]
+  "title1" : "Home",
+  "href1" : "",
+  "title2" : "Services",
+  "href2" : "#features",
+  "title3" : "Pricing",
+  "href3" : "#pricing",
+  "title4" : "Contact",
+  "href4" : "#contact"
 }

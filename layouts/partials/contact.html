@@ -15,20 +15,20 @@
 					{{ if $contact.address }}
 					<div class="mb-3">
 						<div class="text-uppercase text-muted">
-							{{ i18n "address" }}
+							{{ $contact.addresstext }}
 						</div>
 						<div>{{ $contact.address }}</div>
 					</div>
 					{{ end }}
 					{{ if $contact.email }}
 					<div class="mb-3">
-						<div class="text-uppercase text-muted">{{ i18n "email" }}</div>
+						<div class="text-uppercase text-muted">{{ $contact.emailtext }}</div>
 						<div>{{ $contact.email }}</div>
 					 </div>
 					{{ end }}
 					{{ if $contact.phone }}
 					<div class="mb-3">
-						<div class="text-uppercase text-muted">{{ i18n "phone" }}</div>
+						<div class="text-uppercase text-muted">{{ $contact.phonetext }}</div>
 						<div>{{ $contact.phone }}</div>
 					</div>
 					{{ end }}
@@ -37,26 +37,26 @@
 						<div class="row">
 							<div class="col-12 col-lg-6 col-md-6">
 								<div class="form-group">
-									<label>{{ i18n "yourname" }}</label>
+									<label>{{ $contact.yourname }}</label>
 									<input type="text" name="Name" class="form-control" placeholder="Name">
 								</div>
 							</div>
 							<div class="col-12 col-lg-6 col-md-6">
 								<div class="form-group">
-									<label>{{ i18n "youremail" }}</label>
+									<label>{{ $contact.youremail }}</label>
 									<input type="email" name="Email" class="form-control" placeholder="Email">
 								</div>
 							</div>
 
 							<div class="col-12">
 								<div class="form-group">
-									<label>{{ i18n "yourmessage" }}</label>
+									<label>{{ $contact.yourmessage }}</label>
 									<textarea placeholder="Message" name="Message" rows="5" class="form-control"></textarea>
 								</div>
 							</div>
 
 							<div class="col-12">
-									<button type="submit" class="btn btn-primary">{{ i18n "submitbtn" }}</button>
+									<button type="submit" class="btn btn-primary">{{ $contact.submitbtn }}</button>
 							</div>
 
 						</div>

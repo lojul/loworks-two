@@ -9,11 +9,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            {{ range $nav.links }}
+
             <li class="nav-item">
-                <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ .href }}">{{ .title }}</a>
+                <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ $nav.href1 }}">{{ $nav.title1 }}</a>
             </li>
-            {{ end }}
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ $nav.href2 }}">{{ $nav.title2 }}</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ $nav.href3 }}">{{ $nav.title3 }}</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ $nav.href4 }}">{{ $nav.title4 }}</a>
+            </li>
+
             {{- if .Site.IsMultiLingual }}
             <li class="nav-item" style="margin: 8px 15px;">
                 <select id="select-language" onchange="location = this.value;">

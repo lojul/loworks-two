@@ -20,11 +20,7 @@ collections:
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: "Domain Name", name: "baseURL", widget: "string", required: true }
           - {label: "DefaultContentLanguage", name: "DefaultContentLanguage", widget: "hidden", default: "en" }
-          - widget: object
-            name: params
-            label: Params
-            fields:
-              - {widget: "boolean", name: DisableLanguageSwitchingButton, label: DisableLanguageSwitchingButton, required: true}         
+          - {widget: "hidden", name: DisableLanguageSwitchingButton, label: DisableLanguageSwitchingButton, required: true}
     - file: "data/site.json" # The path to the folder where the documents are stored
       label: "Logo,favicon, Google Analytics"
       name: "sitelfg"
@@ -33,28 +29,44 @@ collections:
           - {label: 'Logo', name: 'logo', widget: 'image', required: true }
           - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
           - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
+    - file: "data/en/nav.json"
+      label: "Navigation EN"
+      name: "NavigationEN"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Nav Title 1", name: "title1", widget: "string", required: true }
+          - {label: "Nav Title 2", name: "title2", widget: "string", required: true }
+          - {label: "Nav Title 3", name: "title3", widget: "string", required: true }
+          - {label: "Nav Title 4", name: "title4", widget: "string", required: true }
+    - file: "data/zh/nav.json"
+      label: "Navigation ZH"
+      name: "NavigationZH"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Nav Title 1", name: "title1", widget: "string", required: true }
+          - {label: "Nav Title 2", name: "title2", widget: "string", required: true }
+          - {label: "Nav Title 3", name: "title3", widget: "string", required: true }
+          - {label: "Nav Title 4", name: "title4", widget: "string", required: true }
     - file: "data/en/cover.json" # The path to the folder where the documents are stored
       label: "Header EN"
       name: "HeaderEN"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: 'Logo', name: 'logo', widget: 'image', required: true }
-          - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
-          - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Banner Image', name: 'illustration', widget: 'image', required: true, default: "images/covers/freelancing.svg" }
+          - {label: 'Contact button Text', name: 'contactbtn', widget: 'string', required: true }
+          - {label: 'Services Link Text', name: 'featuresbtn', widget: 'string', required: true }
     - file: "data/zh/cover.json" # The path to the folder where the documents are stored
       label: "Header ZH"
       name: "HeaderZH"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: 'Logo', name: 'logo', widget: 'image', required: true }
-          - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
-          - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: 'Banner Image', name: 'illustration', widget: 'image', required: true, default: "images/covers/freelancing.svg" }
+          - {label: 'Contact button Text', name: 'contactbtn', widget: 'string', required: true }
+          - {label: 'Services Link Text', name: 'featuresbtn', widget: 'string', required: true }
     - file: "data/en/features.json"
       label: "Services EN"
       name: "ServicesEN"
@@ -122,7 +134,13 @@ collections:
           - {label: "Address", name: "address", widget: "string", required: true }
           - {label: "Phone", name: "phone", widget: "string", required: true }
           - {label: "E-mail", name: "email", widget: "string", required: true }
-          - {label: "Formspree", name: "formspree", widget: "string", required: true }
+          - {label: "addresstext", name: "Address text", widget: "string", required: true }
+          - {label: "emailtext", name: "Email text", widget: "string", required: true }
+          - {label: "phonetext", name: "phone text", widget: "string", required: true }
+          - {label: "yourname", name: "Your Name text", widget: "string", required: true }
+          - {label: "youremail", name: "Your Email text", widget: "string", required: true }
+          - {label: "yourmessage", name: "Your Message text", widget: "string", required: true }
+          - {label: "submitbtn", name: "Submit button Textt", widget: "string", required: true }
     - file: "data//zh/contact.json"
       label: "Contact ZH"
       name: "ContactZH"
@@ -132,7 +150,13 @@ collections:
           - {label: "Address", name: "address", widget: "string", required: true }
           - {label: "Phone", name: "phone", widget: "string", required: true }
           - {label: "E-mail", name: "email", widget: "string", required: true }
-          - {label: "Formspree", name: "formspree", widget: "string", required: true }
+          - {label: "addresstext", name: "Address text", widget: "string", required: true }
+          - {label: "emailtext", name: "Email text", widget: "string", required: true }
+          - {label: "phonetext", name: "phone text", widget: "string", required: true }
+          - {label: "yourname", name: "Your Name text", widget: "string", required: true }
+          - {label: "youremail", name: "Your Email text", widget: "string", required: true }
+          - {label: "yourmessage", name: "Your Message text", widget: "string", required: true }
+          - {label: "submitbtn", name: "Submit button Textt", widget: "string", required: true }
     - file: "data/en/footer.json"
       label: "Footer EN"
       name: "FooterEN"
@@ -282,8 +306,8 @@ collections:
           - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
           - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
           - {label: 'Description 3', name: 'description3', widget: 'string', required: true }
-  - name: "Pricing ZH" # Used in routes, e.g., /admin/collections/post
-    label: "PricingZH" # Used in the UI
+  - name: "PricingZH" # Used in routes, e.g., /admin/collections/post
+    label: "Pricing ZH" # Used in the UI
     create: false # Allow users to create new documents in this collection
     delete: false # Disallow users to delete new documents in this collection
     editor:
@@ -317,21 +341,3 @@ collections:
           - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
           - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
           - {label: 'Description 3', name: 'description3', widget: 'string', required: true }
-  - name: "LanguageTranslation" # Used in routes, e.g., /admin/collections/post
-    label: "Language Translation" # Used in the UI
-    create: false # Allow  users to create new documents in this collection
-    delete: false # Disallow users to delete new documents in this collection
-    editor:
-      preview: true
-    files:
-      - name: english
-        label: English Translation
-        file: "i18n/en.yaml" # The path to the folder where the documents are stored
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "features", name: "features", widget: "string", required: true }
-          - widget: object
-            name: home
-            label: Home
-            fields:
-              - {widget: string, name: other, label: Other, required: true}
