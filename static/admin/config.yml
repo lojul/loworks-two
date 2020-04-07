@@ -26,15 +26,15 @@ collections:
             fields:
               - {widget: "boolean", name: DisableLanguageSwitchingButton, label: DisableLanguageSwitchingButton, required: true}
           - widget: object
-            name: Languages.en
-            label: langen
+            name: en
+            label: English Selector Text
             fields:
               - {label: "languageName", name: "languageName", widget: "string", default: "English", required: true }
               - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us", required: true }
               - {label: "dataDir", name: "dataDir", widget: "hidden", default: "data/en", required: true }
           - widget: object
-            name: Languages.zh
-            label: langen
+            name: zh
+            label: Chinese Selector Text
             fields:
               - {label: "languageName", name: "languageName", widget: "string", default: "中文", required: true }
               - {label: "languageCode", name: "languageCode", widget: "hidden", default: "zh-zh", required: true }
