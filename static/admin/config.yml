@@ -19,7 +19,12 @@ collections:
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
           - {label: "Domain Name", name: "baseURL", widget: "string", required: true }
-          - {label: "languageCode", name: "languageCode", widget: "hidden", default: "en-us" }
+          - {label: "DefaultContentLanguage", name: "DefaultContentLanguage", widget: "hidden", default: "en" }
+          - widget: object
+            name: params
+            label: Params
+            fields:
+              - {widget: string, name: DisableLanguageSwitchingButton, label: DisableLanguageSwitchingButton, required: true}
     - file: "data/site.json" # The path to the folder where the documents are stored
       label: "Logo,favicon, Google Analytics"
       name: "sitelfg"
@@ -321,7 +326,7 @@ collections:
     files:
       - name: english
         label: English Translation
-        file: "il8n/en.yaml" # The path to the folder where the documents are stored
+        file: "i18n/en.yaml" # The path to the folder where the documents are stored
         fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "features", name: "features", widget: "string", required: true }
