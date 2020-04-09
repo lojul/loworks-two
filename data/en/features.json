@@ -1,13 +1,13 @@
 {
-  "title" : "Our Services",
-  "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis mollis nisi, a tempor mi fermentum eget. Duis sed pulvinar justo.",
-  "icon1" : "bell",
-  "title1" : "Creative Design",
-  "description1" : "Our proven creative website design services speak of your brand, thus establishing an instant connection with your customers.",
-  "icon2" : "code",
-  "title2" : "Web & Mobile Development",
-  "description2" : "We help you craft a functional and high-performing apps and websites through our effective mobile and web development services.",
-  "icon3" : "dfds",
-  "title3" : "Digital Marketing",
-  "description3" : "Enhance your reach and make more customers fall for you with our well-planned and strategized marketing solutions."
+  "description1": "Together we understand your goal and ideas, then we develop the user flow, wireframe, high fidelity mockups and clickable prototype for your application.",
+  "description2": "We offer a free consultation to enable us to get to know you and the individual challenges of your project.",
+  "description3": "Cast-iron cost and a clear timeline for any software, website or app development project.",
+  "title": "Our Services",
+  "icon1": "bell",
+  "title1": "Design",
+  "icon2": "code",
+  "title2": "Everything starts with a FREE consultation",
+  "icon3": "dfds",
+  "title3": "Fixed Price Development",
+  "description": "We solve everyday problems and improve user experience with cutting-edge technologies and creativity. Our development services help customers create new opportunities in their business."
 }
