@@ -1,7 +1,7 @@
 {
-	"title" : "Quality code for your ideas",
-	"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nulla ac urna suscipit iaculis sit amet ac neque. Cras volutpat scelerisque pretium. Mauris cursus ultricies pulvinar.",
-	"illustration" : "/images/freelancing.svg",
-	"contactbtn" : "Contact",
-	"featuresbtn" : " Or see why we worth it"
+  "title": "We Build Applications for Organisations",
+  "description": "We craft state-of-the-art applications with cutting-edge technologies and best practices",
+  "illustration": "/images/freelancing.svg",
+  "contactbtn": "Contact",
+  "featuresbtn": " Or see why we worth it"
 }
