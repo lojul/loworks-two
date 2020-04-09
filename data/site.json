@@ -1,5 +1,5 @@
 {
-	"logo" : "images/logo.svg",
-	"favicon" : "images/favicon.png",
-	"googleAnalytics" : "XXXX XXXX"
+  "logo": "/images/loworks.png",
+  "favicon": "images/favicon.png",
+  "googleAnalytics": "XXXX XXXX"
 }
