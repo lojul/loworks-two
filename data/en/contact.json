@@ -1,13 +1,13 @@
 {
-  "title": "Contact",
-  "address" : "18XX, Sector 45 Delhi",
-  "phone" : "+91 720 626 XXXX",
-  "email" : "xxxxxx@gmail.com",
-  "addresstext" : "Address",
-  "emailtext" : "Email",
-  "phonetext" : "Phone",
-  "yourname" : "Name",
-  "youremail" : "Email",
-  "yourmessage" : "Message",
-  "submitbtn" : "Submit"
+  "addresstext": "Address",
+  "submitbtn": "Submit",
+  "emailtext": "Email",
+  "youremail": "Email",
+  "phone": "+91 720 626 XXXX",
+  "yourmessage": "Message",
+  "address": "18XX, Sector 45 Delhi",
+  "title": "Contact Us",
+  "phonetext": "Phone",
+  "email": "info@loworks.co",
+  "yourname": "Name"
 }
