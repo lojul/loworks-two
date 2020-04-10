@@ -310,3 +310,36 @@
     }
   }
 }
+
+.lang-select {
+  overflow: auto;
+  border: 0 none;
+
+  &:focus {
+    border: none;
+    outline: 0;
+  }
+}
+
+.sel {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+
+  &:focus, &:hover {
+    color: rgba(0, 0, 0, 0.7);
+    outline: 0;
+  }
+}
+
+.lang-select option {
+  &:nth-child(1)::after {
+    content: "|";
+    color: #222;
+  }
+
+  &:checked {
+    background: #ffffff !important;
+  }
+}
