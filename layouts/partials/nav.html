@@ -3,12 +3,12 @@
 {{ $cover := $data.cover }}
 {{ $nav := $data.nav }}
 <nav class="navbar nav-transparent navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{ $site.logo | absURL }}" height="40px"></a>
+    <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{ $site.logo | absURL }}" height="100px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="margin-left: auto;">
 
             <li class="nav-item">
                 <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ $nav.href1 }}">{{ $nav.title1 }}</a>
@@ -48,13 +48,6 @@
                     {{ end }}
                     {{ end }}
                 </select>
-            </li>
-            {{ end }}
-        </ul>
-        <ul class="ml-auto navbar-nav">
-            {{ range $key, $value := .Site.Data.social }}
-            <li class="nav-item" style="font-size: 22px">
-                <a href="{{ $value }}" class="ml-3 text-white btn-{{ $key }}" target="_blank"><i class="fab fa-{{ $key }}"></i></a>
             </li>
             {{ end }}
         </ul>
