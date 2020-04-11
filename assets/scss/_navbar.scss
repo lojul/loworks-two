@@ -311,6 +311,14 @@
   }
 }
 
+select option {
+  &:hover, &:focus, &:active {
+    background: linear-gradient(#ffffff, #ffffff);
+    background-color: #ffffff !important;
+    color: #222 !important;
+  }
+}
+
 .lang-select {
   overflow: auto;
   border: 0 none;
@@ -326,6 +334,7 @@
   float: left;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
+  background: #ffffff !important;
 
   &:focus, &:hover {
     color: rgba(0, 0, 0, 0.7);
@@ -341,5 +350,6 @@
 
   &:checked {
     background: #ffffff !important;
+    box-shadow: 0 0 10px 100px #fff inset;
   }
 }
