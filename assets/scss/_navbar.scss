@@ -313,6 +313,8 @@
 
 select option {
   &:hover, &:focus, &:active {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -o-linear-gradient(#ffffff, #ffffff);
     background: linear-gradient(#ffffff, #ffffff);
     background-color: #ffffff !important;
     color: #222 !important;
@@ -350,6 +352,8 @@ select option {
 
   &:checked {
     background: #ffffff !important;
-    box-shadow: 0 0 10px 100px #fff inset;
+    background: #fff!important;
+    -webkit-box-shadow: 0 0 10px 100px #fff inset;
+            box-shadow: 0 0 10px 100px #fff inset;
   }
 }
