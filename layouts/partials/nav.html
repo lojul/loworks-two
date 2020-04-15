@@ -3,7 +3,7 @@
 {{ $cover := $data.cover }}
 {{ $nav := $data.nav }}
 <nav class="navbar nav-transparent navbar-expand-lg fixed-top navbar-light">
-    <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{ $site.logo | absURL }}" height="100px"></a>
+    <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{ $site.logo | absURL }}" height="100px" class="img-fluid"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,7 +23,7 @@
             </li>
 
             {{- if .Site.IsMultiLingual }}
-            <li class="nav-item" style="margin: 8px 15px;">
+            <li class="nav-item nav-lang">
                 <select id="select-language" onchange="location = this.value;" size="2" class="lang-select">
                     {{ $siteLanguages := .Site.Languages}}
                     {{ $pageLang := .Page.Lang}}

@@ -356,3 +356,14 @@ select option {
             box-shadow: 0 0 10px 100px #fff inset;
   }
 }
+
+.navbarCollapseFooter{
+  display: flex!important;
+  flex-basis: auto;
+}
+
+@media (min-width: 992px) {
+.nav-lang {
+  margin: 8px 15px;
+}
+}
