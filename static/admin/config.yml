@@ -165,9 +165,8 @@ collections:
           - {label: 'Description', name: 'description', widget: 'string', required: true }
   - name: "Approach1EN" # Used in routes, e.g., /admin/collections/post
     label: "Approach EN" # Used in the UI
-    create: false # Allow users to create new documents in this collection
-    delete: false # Disallow users to delete new documents in this collection
-    folder: "data/en/approach"
+    create: true # Allow users to create new documents in this collection
+    delete: true # Disallow users to delete new documents in this collection
     editor:
       preview: true
     fields:
