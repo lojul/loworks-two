@@ -167,6 +167,7 @@ collections:
     label: "Approach EN" # Used in the UI
     create: true # Allow users to create new documents in this collection
     delete: true # Disallow users to delete new documents in this collection
+    folder: "data/en/approach"
     editor:
       preview: true
     fields:
