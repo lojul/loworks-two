@@ -167,17 +167,14 @@ collections:
     label: "Approach EN" # Used in the UI
     create: false # Allow users to create new documents in this collection
     delete: false # Disallow users to delete new documents in this collection
+    folder: "data/en/approach"
     editor:
       preview: true
-    files:
-    - file: "data/en/approach.json"
-      label: "Approach List 1"
-      name: "ApproachList1"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title1", name: "title1", widget: "string", required: true }
-          - {label: "Price", name: "price", widget: "string", required: true }
-          - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Title1", name: "title1", widget: "string", required: true }
+      - {label: "Price", name: "price", widget: "string", required: true }
+      - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
   - name: "ApproachZH" # Used in routes, e.g., /admin/collections/post
     label: "Approach ZH" # Used in the UI
     create: false # Allow users to create new documents in this collection
