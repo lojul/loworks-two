@@ -149,73 +149,31 @@ collections:
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
           - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
-  - name: "PricingEN" # Used in routes, e.g., /admin/collections/post
-    label: "Pricing EN" # Used in the UI
+  - name: "ApproachEN" # Used in routes, e.g., /admin/collections/post
+    label: "Approach EN" # Used in the UI
     create: false # Allow users to create new documents in this collection
     delete: false # Disallow users to delete new documents in this collection
     editor:
       preview: true
     files:
-    - file: "data/en/pricing.json" # The path to the folder where the documents are stored
-      label: "Pricing Title and Description"
-      name: "PricingTitle"
+    - file: "data/en/approach.json" # The path to the folder where the documents are stored
+      label: "Approach Title and Description"
+      name: "ApproachTitle"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-    - file: "data/en/pricing1.json" # The path to the folder where the documents are stored
-      label: "Pricing List 1"
-      name: "PricingList1"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: "Price", name: "price", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
-          - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
-    - file: "data/en/pricing2.json" # The path to the folder where the documents are stored
-      label: "Pricing List 2"
-      name: "PricingList2"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: "Price", name: "price", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
-          - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
-          - {label: 'Description 3', name: 'description3', widget: 'string', required: true }
-  - name: "PricingZH" # Used in routes, e.g., /admin/collections/post
-    label: "Pricing ZH" # Used in the UI
+  - name: "ApproachZH" # Used in routes, e.g., /admin/collections/post
+    label: "Approach ZH" # Used in the UI
     create: false # Allow users to create new documents in this collection
     delete: false # Disallow users to delete new documents in this collection
     editor:
       preview: true
     files:
-    - file: "data/zh/pricing.json" # The path to the folder where the documents are stored
-      label: "Pricing Title and Description"
-      name: "PricingTitle"
+    - file: "data/zh/approach.json" # The path to the folder where the documents are stored
+      label: "Approach Title and Description"
+      name: "ApproachTitle"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-    - file: "data/zh/pricing1.json" # The path to the folder where the documents are stored
-      label: "Pricing List 1"
-      name: "PricingList1"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: "Price", name: "price", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
-          - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
-    - file: "data/zh/pricing2.json" # The path to the folder where the documents are stored
-      label: "Pricing List 2"
-      name: "PricingList2"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: "Price", name: "price", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
-          - {label: 'Description 2', name: 'description2', widget: 'string', required: true }
-          - {label: 'Description 3', name: 'description3', widget: 'string', required: true }
