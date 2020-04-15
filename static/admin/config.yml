@@ -34,19 +34,17 @@ collections:
       name: "NavigationEN"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Nav Title 1", name: "title1", widget: "string", required: true }
-          - {label: "Nav Title 2", name: "title2", widget: "string", required: true }
-          - {label: "Nav Title 3", name: "title3", widget: "string", required: true }
-          - {label: "Nav Title 4", name: "title4", widget: "string", required: true }
+          - {label: "Nav Title 1", name: "title2", widget: "string", required: true }
+          - {label: "Nav Title 2", name: "title3", widget: "string", required: true }
+          - {label: "Nav Title 3", name: "title4", widget: "string", required: true }
     - file: "data/zh/nav.json"
       label: "Navigation ZH"
       name: "NavigationZH"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Nav Title 1", name: "title1", widget: "string", required: true }
-          - {label: "Nav Title 2", name: "title2", widget: "string", required: true }
-          - {label: "Nav Title 3", name: "title3", widget: "string", required: true }
-          - {label: "Nav Title 4", name: "title4", widget: "string", required: true }
+          - {label: "Nav Title 1", name: "title2", widget: "string", required: true }
+          - {label: "Nav Title 2", name: "title3", widget: "string", required: true }
+          - {label: "Nav Title 3", name: "title4", widget: "string", required: true }
     - file: "data/en/cover.json" # The path to the folder where the documents are stored
       label: "Header EN"
       name: "HeaderEN"

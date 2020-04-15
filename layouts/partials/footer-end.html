@@ -18,5 +18,20 @@
     <script src="{{"js/fontawesome-all.js" | absURL }}"></script>
     <script src="{{"js/script.js" | absURL }}"></script>
 
+      <script language="javascript" type="text/javascript">
+        $(document).ready(function(){
+
+              $("#select-language").change(function() {
+      if($(this).val() == 1){
+
+          $("#en").css('display', 'block');
+
+      }else{
+          $(".zh").css('display', 'none');
+      }
+  });
+                });
+    </script>
+
   </body>
 </html>

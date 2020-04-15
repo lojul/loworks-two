@@ -346,13 +346,12 @@ select option {
 
 .lang-select option {
   &:nth-child(1)::after {
-    content: "|";
-    color: #222;
+    // content: "|";
+    // color: #222;
   }
 
   &:checked {
     background: #ffffff !important;
-    background: #fff!important;
     -webkit-box-shadow: 0 0 10px 100px #fff inset;
             box-shadow: 0 0 10px 100px #fff inset;
   }
