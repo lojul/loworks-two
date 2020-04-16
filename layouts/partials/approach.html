@@ -1,36 +1,21 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ $approach := $data.approach }}
+{{ $sectionPages := (where .Site.Pages.ByWeight "Section" "==" "approach") }}
 <section id="approach" class="py-5">
     <div class="container text-center">
         <h2 class="pt-5 h2">{{ $approach.title }}</h2>
         <p class="text-muted pb-3">{{ $approach.description }}</p>
         <div class="col-lg-12">
             <div class="row text-center">
+                {{ range $sectionPages }}
+                {{if gt (len .Description) 8}}
                 <div class="col-sm-4 mb-4">
-                    <div class="thumbnail"><img src="/images/edit.png" alt="Paris" class="img-thumbnail border-0"></div>
-                    <h4 class="pt-2">Free Quote</h4>
-                    <p class="ml-5 mr-5 text-muted">We provide free quote after fully understanding your vision</p>
+                    <div class="thumbnail"><img src="{{ .Params.Image }}" alt="{{ .Title }}" class="img-thumbnail border-0"></div>
+                    <h4 class="pt-2">{{ .Title }}</h4>
+                    <p class="ml-5 mr-5 text-muted">{{ .Params.Description }}</p>
                 </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="thumbnail"><img src="/images/refresh.png" alt="Paris" class="img-thumbnail border-0"></div>
-                    <h4 class="pt-2">Iterate and Refine</h4>
-                    <p class="ml-5 mr-5 text-muted">We believe short iterations deliver great products and we expect changes</p>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="thumbnail"><img src="/images/four-arrows.png" alt="Paris" class="img-thumbnail border-0"></div>
-                    <h4 class="pt-2">Scalable</h4>
-                    <p class="ml-5 mr-5 text-muted">We build software that grows in-line with with your business</p>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="thumbnail"><img src="/images/calendar.png" alt="Paris" class="img-thumbnail border-0"></div>
-                    <h4 class="pt-2">Organize</h4>
-                    <p class="ml-5 mr-5 text-muted">We organize steps that need to be taken on weekly basis</p>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="thumbnail"><img src="/images/wrench.png" alt="Paris" class="img-thumbnail border-0"></div>
-                    <h4 class="pt-2">Post Development Services</h4>
-                    <p class="ml-5 mr-5 text-muted">3-months free post development support</p>
-                </div>
+                {{end}}
+                {{ end }}
             </div>
         </div>
 </section>

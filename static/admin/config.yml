@@ -163,18 +163,19 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-  - name: "Approach1EN" # Used in routes, e.g., /admin/collections/post
-    label: "Approach EN" # Used in the UI
+  - name: "ApproachItemEN" # Used in routes, e.g., /admin/collections/post
+    label: "Approach Items EN" # Used in the UI
     create: true # Allow users to create new documents in this collection
     delete: true # Disallow users to delete new documents in this collection
-    folder: "data/en/approach"
+    folder: "content/en/approach"
     editor:
       preview: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden"}
-      - {label: "Title1", name: "title1", widget: "string", required: true }
-      - {label: "Price", name: "price", widget: "string", required: true }
-      - {label: 'Description 1', name: 'description1', widget: 'string', required: true }
+      - {label: 'Image', name: 'image', widget: 'image', required: true}
+      - {label: "Title", name: "title", widget: "string", required: true }
+      - {label: 'Description', name: 'description', widget: 'string', required: true }
+      - {label: 'Order', name: 'weight', widget: 'number', required: true }
   - name: "ApproachZH" # Used in routes, e.g., /admin/collections/post
     label: "Approach ZH" # Used in the UI
     create: false # Allow users to create new documents in this collection
@@ -189,3 +190,16 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
+  - name: "ApproachItemZH" # Used in routes, e.g., /admin/collections/post
+    label: "Approach Items ZH" # Used in the UI
+    create: true # Allow users to create new documents in this collection
+    delete: true # Disallow users to delete new documents in this collection
+    folder: "content/zh/approach"
+    editor:
+      preview: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: 'Image', name: 'image', widget: 'image', required: true}
+      - {label: "Title", name: "title", widget: "string", required: true }
+      - {label: 'Description', name: 'description', widget: 'string', required: true }
+      - {label: 'Order', name: 'weight', widget: 'number', required: true }

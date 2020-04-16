@@ -13,8 +13,10 @@ DisableLanguageSwitchingButton = "false"
 languageName = "English"
 languageCode = "en-us"
 dataDir = "data/en"
+contentDir = "content/en"
 
 [Languages.zh]
 languageName = "中文"
 languageCode = "zh-zh"
 dataDir = "data/zh"
+contentDir = "content/zh"
