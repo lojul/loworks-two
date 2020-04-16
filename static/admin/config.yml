@@ -65,38 +65,34 @@ collections:
           - {label: 'Banner Image', name: 'illustration', widget: 'image', required: true, default: "images/covers/freelancing.svg" }
           - {label: 'Contact button Text', name: 'contactbtn', widget: 'string', required: true }
           - {label: 'Services Link Text', name: 'featuresbtn', widget: 'string', required: true }
-    - file: "data/en/features.json"
-      label: "Services EN"
+    - file: "data/en/services.json"
+      label: "Services Title and Description EN"
       name: "ServicesEN"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: "Services Title 1", name: "title1", widget: "string", required: true }
-          - {label: "Services Icon 1", name: "icon1", widget: "string", required: true }
-          - {label: 'Services Description 1', name: 'description1', widget: 'string', required: true }
-          - {label: "Services Title 2", name: "title2", widget: "string", required: true }
-          - {label: "Services Icon 2", name: "icon2", widget: "string", required: true }
-          - {label: 'Services Description 2', name: 'description2', widget: 'string', required: true }
-          - {label: "Services Title 3", name: "title3", widget: "string", required: true }
-          - {label: "Services Icon 3", name: "icon3", widget: "string", required: true }
-          - {label: 'Services Description 3', name: 'description3', widget: 'string', required: true }
-    - file: "data/zh/features.json"
-      label: "Services ZH"
+    - file: "data/zh/services.json"
+      label: "Services Title and Description ZH"
       name: "ServicesZH"
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
           - {label: 'Description', name: 'description', widget: 'string', required: true }
-          - {label: "Services Title 1", name: "title1", widget: "string", required: true }
-          - {label: "Services Icon 1", name: "icon1", widget: "string", required: true }
-          - {label: 'Services Description 1', name: 'description1', widget: 'string', required: true }
-          - {label: "Services Title 2", name: "title2", widget: "string", required: true }
-          - {label: "Services Icon 2", name: "icon2", widget: "string", required: true }
-          - {label: 'Services Description 2', name: 'description2', widget: 'string', required: true }
-          - {label: "Services Title 3", name: "title3", widget: "string", required: true }
-          - {label: "Services Icon 3", name: "icon3", widget: "string", required: true }
-          - {label: 'Services Description 3', name: 'description3', widget: 'string', required: true }
+    - file: "data/en/approach.json"
+      label: "Approach Title and Description EN"
+      name: "ApproachEN"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
+    - file: "data/zh/approach.json"
+      label: "Approach Title and Description ZH"
+      name: "ApproachZH"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", required: true }
+          - {label: 'Description', name: 'description', widget: 'string', required: true }
     - file: "data/en/contact.json"
       label: "Contact EN"
       name: "ContactEN"
@@ -149,20 +145,32 @@ collections:
           - {label: "Facebook Link", name: "facebook", widget: "string", required: true }
           - {label: "Instagram Link", name: "instagram", widget: "string", required: true }
           - {label: "Twitter Link", name: "twitter", widget: "string", required: true }
-  - name: "ApproachEN" # Used in routes, e.g., /admin/collections/post
-    label: "Approach EN" # Used in the UI
-    create: false # Allow users to create new documents in this collection
-    delete: false # Disallow users to delete new documents in this collection
+  - name: "ServicesItemEN" # Used in routes, e.g., /admin/collections/post
+    label: "Services Items EN" # Used in the UI
+    create: true # Allow users to create new documents in this collection
+    delete: true # Disallow users to delete new documents in this collection
+    folder: "content/en/services"
     editor:
       preview: true
-    files:
-    - file: "data/en/approach.json" # The path to the folder where the documents are stored
-      label: "Approach Title and Description"
-      name: "ApproachTitle"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: 'Image', name: 'image', widget: 'image', required: true}
+      - {label: "Title", name: "title", widget: "string", required: true }
+      - {label: 'Description', name: 'description', widget: 'string', required: true }
+      - {label: 'Order', name: 'weight', widget: 'number', required: true, valueType: "int" }
+  - name: "ServicesItemZH" # Used in routes, e.g., /admin/collections/post
+    label: "Services Items ZH" # Used in the UI
+    create: true # Allow users to create new documents in this collection
+    delete: true # Disallow users to delete new documents in this collection
+    folder: "content/zh/services"
+    editor:
+      preview: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: 'Image', name: 'image', widget: 'image', required: true}
+      - {label: "Title", name: "title", widget: "string", required: true }
+      - {label: 'Description', name: 'description', widget: 'string', required: true }
+      - {label: 'Order', name: 'weight', widget: 'number', required: true, valueType: "int" }
   - name: "ApproachItemEN" # Used in routes, e.g., /admin/collections/post
     label: "Approach Items EN" # Used in the UI
     create: true # Allow users to create new documents in this collection
@@ -175,21 +183,7 @@ collections:
       - {label: 'Image', name: 'image', widget: 'image', required: true}
       - {label: "Title", name: "title", widget: "string", required: true }
       - {label: 'Description', name: 'description', widget: 'string', required: true }
-      - {label: 'Order', name: 'weight', widget: 'number', required: true }
-  - name: "ApproachZH" # Used in routes, e.g., /admin/collections/post
-    label: "Approach ZH" # Used in the UI
-    create: false # Allow users to create new documents in this collection
-    delete: false # Disallow users to delete new documents in this collection
-    editor:
-      preview: true
-    files:
-    - file: "data/zh/approach.json" # The path to the folder where the documents are stored
-      label: "Approach Title and Description"
-      name: "ApproachTitle"
-      fields:
-          - {label: "Layout", name: "layout", widget: "hidden"}
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: 'Description', name: 'description', widget: 'string', required: true }
+      - {label: 'Order', name: 'weight', widget: 'number', required: true, valueType: "int" }
   - name: "ApproachItemZH" # Used in routes, e.g., /admin/collections/post
     label: "Approach Items ZH" # Used in the UI
     create: true # Allow users to create new documents in this collection
@@ -202,4 +196,4 @@ collections:
       - {label: 'Image', name: 'image', widget: 'image', required: true}
       - {label: "Title", name: "title", widget: "string", required: true }
       - {label: 'Description', name: 'description', widget: 'string', required: true }
-      - {label: 'Order', name: 'weight', widget: 'number', required: true }
+      - {label: 'Order', name: 'weight', widget: 'number', required: true, valueType: "int" }

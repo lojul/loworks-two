@@ -1,0 +1,6 @@
+---
+title: "Monthly Managed Services"
+description: "Access to our dedicated team of experts for a cost-effective fixed monthly cost."
+image: "/images/refresh.png"
+weight: 3
+---
