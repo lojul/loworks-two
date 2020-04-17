@@ -1,7 +1,7 @@
-// Base class
-//
-// Kickstart any navigation component with a set of style resets. Works with
-// `<nav>`s or `<ul>`s.
+/* Base class*/
+/**/
+/* Kickstart any navigation component with a set of style resets. Works with*/
+/* `<nav>`s or `<ul>`s.*/
 
 .nav {
   display: flex;
@@ -9,7 +9,7 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  
+
 }
 
 .nav-link {
@@ -20,15 +20,15 @@
     text-decoration: none;
   }
 
-  // Disabled state lightens text
+  /* Disabled state lightens text*/
   &.disabled {
     color: $nav-link-disabled-color;
   }
 }
 
-//
-// Tabs
-//
+/**/
+/* Tabs*/
+/**/
 
 .nav-tabs {
   border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
@@ -60,17 +60,17 @@
   }
 
   .dropdown-menu {
-    // Make dropdown border overlap tab border
+    /* Make dropdown border overlap tab border*/
     margin-top: -$nav-tabs-border-width;
-    // Remove the top rounded corners here since there is a hard edge above the menu
+    /* Remove the top rounded corners here since there is a hard edge above the menu*/
     @include border-top-radius(0);
   }
 }
 
 
-//
-// Pills
-//
+/**/
+/* Pills*/
+/**/
 
 .nav-pills {
   .nav-link {
@@ -85,9 +85,9 @@
 }
 
 
-//
-// Justified variants
-//
+/**/
+/* Justified variants*/
+/**/
 
 .nav-fill {
   .nav-item {
@@ -105,9 +105,9 @@
 }
 
 
-// Tabbable tabs
-//
-// Hide tabbable panes to start, show them when `.active`
+/* Tabbable tabs*/
+/**/
+/* Hide tabbable panes to start, show them when `.active`*/
 
 .tab-content {
   > .tab-pane {

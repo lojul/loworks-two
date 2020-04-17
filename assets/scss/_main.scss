@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 *{
-  // outline: 1px solid red;
+  /* outline: 1px solid red;*/
 }
 
 html{
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6,strong{
   text-align: center;
   display: block;
   border-radius: $border-radius;
-  // box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 20px 10px -13px #0000000f;
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 20px 10px -13px #0000000f;*/
   background-color: #fff;
   overflow: hidden;
 
@@ -72,7 +72,9 @@ h1,h2,h3,h4,h5,h6,strong{
     font-size: 14px;
 
     div{
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 30px 1fr;
       grid-template-columns: 30px 1fr;
     }
   }
@@ -153,7 +155,7 @@ h1,h2,h3,h4,h5,h6,strong{
   }
 }
 
-// Styles for blog
+/* Styles for blog*/
 article{
   color: #2b2b2b;
   font-size: 18px;
@@ -215,19 +217,19 @@ article{
 
   p{
     max-width: 740px;
-    // padding: 0 20px;
+    /* padding: 0 20px;*/
     margin: 12px auto 12px auto;
     text-align: left;
   }
 }
 
 
-// Styles for work portfolio
+/* Styles for work portfolio*/
 .overlay{
   background-color: rgba(0,0,0,0.7);
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  // z-index of 1020 is of bootstrap navbar
+  /* z-index of 1020 is of bootstrap navbar*/
   z-index: 1031;
   opacity: 0;
   display: none;
@@ -252,7 +254,8 @@ article{
   z-index: 1032;
   opacity: 0;
   top: 50%; left: 50%;
-  transform: translate(-50%,-50%) scale(1.3);
+  -webkit-transform: translate(-50%,-50%) scale(1.3);
+          transform: translate(-50%,-50%) scale(1.3);
 
   transition: all 0.3s ease;
 
@@ -270,11 +273,11 @@ article{
   }
 
   .textHolder{
-    // position: absolute;
+    /* position: absolute;*/
     bottom: 0px; left: 0px;
     background-color: black;
     color: #fff;
-    // transform: translate(50%);
+    /* transform: translate(50%);*/
     opacity: 0;
     text-align: center;
     display: inline-block;
@@ -283,7 +286,8 @@ article{
 
   &.active{
     opacity: 1;
-    transform: translate(-50%,-50%) scale(1);
+    -webkit-transform: translate(-50%,-50%) scale(1);
+            transform: translate(-50%,-50%) scale(1);
 
     .textHolder{
       opacity: 1;
@@ -343,7 +347,8 @@ article{
         opacity: 1;
       }
       &:after{
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
       }
     }
   }

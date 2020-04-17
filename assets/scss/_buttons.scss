@@ -1,8 +1,8 @@
-// stylelint-disable selector-no-qualifying-type
+/* stylelint-disable selector-no-qualifying-type*/
 
-//
-// Base styles
-//
+/**/
+/* Base styles*/
+/**/
 
 .btn {
   display: inline-block;
@@ -10,13 +10,16 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
-  // Share hover and focus styles
+  /* Share hover and focus styles*/
   @include hover-focus {
     text-decoration: none;
   }
@@ -27,14 +30,14 @@
     box-shadow: $btn-focus-box-shadow;
   }
 
-  // Disabled comes first so active can properly restyle
+  /* Disabled comes first so active can properly restyle*/
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
     @include box-shadow(none);
   }
 
-  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  /* Opinionated: add "hand" cursor to non-disabled .btn elements*/
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
@@ -50,16 +53,16 @@
   }
 }
 
-// Future-proof disabling of clicks on `<a>` elements
+/* Future-proof disabling of clicks on `<a>` elements*/
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
 
 
-//
-// Alternate buttons
-//
+/**/
+/* Alternate buttons*/
+/**/
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
@@ -74,11 +77,11 @@ fieldset:disabled a.btn {
 }
 
 
-//
-// Link buttons
-//
+/**/
+/* Link buttons*/
+/**/
 
-// Make a button look and behave like a link
+/* Make a button look and behave like a link*/
 .btn-link {
   font-weight: $font-weight-normal;
   color: $link-color;
@@ -86,14 +89,16 @@ fieldset:disabled a.btn {
 
   @include hover {
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    -webkit-text-decoration: $link-hover-decoration;
+            text-decoration: $link-hover-decoration;
     background-color: transparent;
     border-color: transparent;
   }
 
   &:focus,
   &.focus {
-    text-decoration: $link-hover-decoration;
+    -webkit-text-decoration: $link-hover-decoration;
+            text-decoration: $link-hover-decoration;
     border-color: transparent;
     box-shadow: none;
   }
@@ -103,13 +108,13 @@ fieldset:disabled a.btn {
     color: $btn-link-disabled-color;
   }
 
-  // No need for an active state here
+  /* No need for an active state here*/
 }
 
 
-//
-// Button Sizes
-//
+/**/
+/* Button Sizes*/
+/**/
 
 .btn-lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
@@ -120,21 +125,21 @@ fieldset:disabled a.btn {
 }
 
 
-//
-// Block button
-//
+/**/
+/* Block button*/
+/**/
 
 .btn-block {
   display: block;
   width: 100%;
 
-  // Vertically space out multiple block buttons
+  /* Vertically space out multiple block buttons*/
   + .btn-block {
     margin-top: $btn-block-spacing-y;
   }
 }
 
-// Specificity overrides
+/* Specificity overrides*/
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -159,7 +164,7 @@ input[type="button"] {
     color: #0077b5 !important;
   }
   .btn-twitter{
-    color: #1da1f3 !important; 
+    color: #1da1f3 !important;
   }
   .btn-snapchat{
     color: #000 !important;
@@ -198,7 +203,7 @@ input[type="button"] {
     background-color: #0077b5 !important;
   }
   &.btn-twitter{
-    background-color: #1da1f3 !important; 
+    background-color: #1da1f3 !important;
   }
   &.btn-snapchat{
     background-color: #000 !important;

@@ -1,8 +1,8 @@
-// stylelint-disable declaration-no-important
+/* stylelint-disable declaration-no-important*/
 
-//
-// Border
-//
+/**/
+/* Border*/
+/**/
 
 .border         { border: $border-width solid $border-color !important; }
 .border-top     { border-top: $border-width solid $border-color !important; }
@@ -26,9 +26,9 @@
   border-color: $white !important;
 }
 
-//
-// Border-radius
-//
+/**/
+/* Border-radius*/
+/**/
 
 .rounded {
   border-radius: $border-radius !important;

@@ -1,8 +1,8 @@
-// stylelint-disable declaration-no-important
+/* stylelint-disable declaration-no-important*/
 
-// Flex variation
-//
-// Custom styles for additional flex alignment options.
+/* Flex variation*/
+/**/
+/* Custom styles for additional flex alignment options.*/
 
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
@@ -36,11 +36,11 @@
     .align-content#{$infix}-around  { align-content: space-around !important; }
     .align-content#{$infix}-stretch { align-content: stretch !important; }
 
-    .align-self#{$infix}-auto     { align-self: auto !important; }
+    .align-self#{$infix}-auto     { -ms-grid-row-align: auto !important; align-self: auto !important; }
     .align-self#{$infix}-start    { align-self: flex-start !important; }
     .align-self#{$infix}-end      { align-self: flex-end !important; }
-    .align-self#{$infix}-center   { align-self: center !important; }
+    .align-self#{$infix}-center   { -ms-grid-row-align: center !important; align-self: center !important; }
     .align-self#{$infix}-baseline { align-self: baseline !important; }
-    .align-self#{$infix}-stretch  { align-self: stretch !important; }
+    .align-self#{$infix}-stretch  { -ms-grid-row-align: stretch !important; align-self: stretch !important; }
   }
 }

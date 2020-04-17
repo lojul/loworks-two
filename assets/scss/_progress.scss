@@ -1,3 +1,8 @@
+@-webkit-keyframes progress-bar-stripes {
+  from { background-position: $progress-height 0; }
+  to { background-position: 0 0; }
+}
+
 @keyframes progress-bar-stripes {
   from { background-position: $progress-height 0; }
   to { background-position: 0 0; }
@@ -6,7 +11,7 @@
 .progress {
   display: flex;
   height: $progress-height;
-  overflow: hidden; // force rounded corners by cropping it
+  overflow: hidden; /* force rounded corners by cropping it*/
   font-size: $progress-font-size;
   background-color: $progress-bg;
   @include border-radius($progress-border-radius);
@@ -29,5 +34,6 @@
 }
 
 .progress-bar-animated {
-  animation: progress-bar-stripes $progress-bar-animation-timing;
+  -webkit-animation: progress-bar-stripes $progress-bar-animation-timing;
+          animation: progress-bar-stripes $progress-bar-animation-timing;
 }
