@@ -347,6 +347,11 @@ select option {
   }
 }
 
+.sel::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
 .lang-select option {
   &:nth-child(1)::after {
     /* content: "|";*/
