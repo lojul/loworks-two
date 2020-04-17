@@ -335,6 +335,8 @@ select option {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
   background: #ffffff !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   &:focus, &:hover {
     color: rgba(0, 0, 0, 0.7);
