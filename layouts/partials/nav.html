@@ -23,8 +23,7 @@
             </li>
 
             {{- if .Site.IsMultiLingual }}
-            <li class="nav-item nav-lang">
-                <select id="select-language" onchange="location = this.value;" size="2" class="lang-select">
+            <li class="nav-item">
                     {{ $siteLanguages := .Site.Languages}}
                     {{ $pageLang := .Page.Lang}}
                     {{ range .Page.AllTranslations }}
@@ -33,12 +32,12 @@
                     {{ if eq $translation.Lang .Lang }}
                     {{ $selected := false }}
                     {{ if eq $pageLang .Lang}}
-                    <option class="sel optionEN" id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected style="display: none">
+                    <a class="nav-link" id="{{ $translation.Language }}" href="{{ $translation.Permalink }}" style="display: none">
                         {{ .LanguageName }}
-                    </option>
+                    </a>
                     {{ else }}
-                    <option class="sel optionZH" id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}
-                    </option>
+                    <a class="nav-link" id="{{ $translation.Language }}" href="{{ $translation.Permalink }}">{{ .LanguageName }}
+                    </a>
                     {{ end }}
                     {{ end }}
                     {{ end }}
