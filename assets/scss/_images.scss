@@ -17,9 +17,16 @@
   border: $thumbnail-border-width solid $thumbnail-border-color;
   @include border-radius($thumbnail-border-radius);
   @include box-shadow($thumbnail-box-shadow);
+  width: 30%;
 
   /* Keep them at most 100% wide*/
   @include img-fluid;
+}
+
+@media (min-width: 768px) {
+  .img-thumbnail {
+    width: 100%;
+  }
 }
 
 /* Image thumbnails*/

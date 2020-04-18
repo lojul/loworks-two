@@ -16,37 +16,35 @@
 				<li class="nav-item align-self-center">
 					<a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ $nav.href4 }}">{{ $nav.title4 }}</a>
 				</li>
-				{{- if .Site.IsMultiLingual }}
+                {{ if .Site.IsMultiLingual }}
 				<li class="nav-item align-self-center">
-					<select id="select-language" onchange="location = this.value;" size="2" class="lang-select" style="padding-top: 22px;padding-left: 11px;">
-						{{ $siteLanguages := .Site.Languages}}
-						{{ $pageLang := .Page.Lang}}
-						{{ range .Page.AllTranslations }}
-						{{ $translation := .}}
-						{{ range $siteLanguages }}
-						{{ if eq $translation.Lang .Lang }}
-						{{ $selected := false }}
-						{{ if eq $pageLang .Lang}}
-						<option class="sel optionEN" id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected style="display: none">
-							{{ .LanguageName }}
-						</option>
-						{{ else }}
-						<option class="sel optionZH" id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}
-						</option>
+                    {{ $siteLanguages := .Site.Languages}}
+                    {{ $pageLang := .Page.Lang}}
+                    {{ range .Page.AllTranslations }}
+                    {{ $translation := .}}
+                    {{ range $siteLanguages }}
+                    {{ if eq $translation.Lang .Lang }}
+                    {{ $selected := false }}
+                    {{ if eq $pageLang .Lang}}
+                    <a class="nav-link" id="{{ $translation.Language }}" href="{{ $translation.Permalink }}" style="display: none">
+                        {{ .LanguageName }}
+                    </a>
+                    {{ else }}
+                    <a class="nav-link" id="{{ $translation.Language }}" href="{{ $translation.Permalink }}">{{ .LanguageName }}
+                    </a>
+                    {{ end }}
 						{{ end }}
 						{{ end }}
 						{{ end }}
-						{{ end }}
-					</select>
-				</li>
-				{{ end }}
-			</ul>
-			<div class="d-flex justify-content-center mx-auto">
-				{{ range $key, $value := .Site.Data.social }}
-				<a href="{{ $value }}" class="ml-2 btn-{{$key}}" target="_blank"><i class="fab fa-{{ $key }}"></i></a>
-				{{ end }}
+                </li>
+                {{ end }}
+            </ul>
+            <div class="d-flex justify-content-center mx-auto">
+                {{ range $key, $value := .Site.Data.social }}
+                <a href="{{ $value }}" class="ml-2 btn-{{$key}}" target="_blank"><i class="fab fa-{{ $key }}"></i></a>
+                {{ end }}
+            </div>
+            <div class="d-flex justify-content-end justify-content-sm-center align-items-sm-center text-muted">{{ $footer.footertext }}</div>
 			</div>
-			<div class="d-flex justify-content-end justify-content-sm-center align-items-sm-center text-muted">{{ $footer.footertext }}</div>
-		</div>
-	</nav>
+    </nav>
 </section>
