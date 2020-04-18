@@ -26,9 +26,6 @@
     {{ $sass := resources.Get "/scss/bootstrap.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-   <!--  <style>
-        option:not(.active) {display:none;}
-    </style> -->
   </head>
   <body>
 

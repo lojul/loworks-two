@@ -340,6 +340,17 @@ select option {
   overflow: hidden;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
+  -webkit-appearance: listbox;
+  align-items: flex-start;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  vertical-align: text-bottom;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: none;
+  border-color: #fff;
+  border-image: none;
+  border-radius: initial;
 
   &:focus, &:hover {
     color: rgba(0, 0, 0, 0.7);
