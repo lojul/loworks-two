@@ -22,7 +22,7 @@
                 <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}{{ $nav.href4 }}">{{ $nav.title4 }}</a>
             </li>
 
-            {{- if .Site.IsMultiLingual }}
+            {{ if .Site.IsMultiLingual }}
             <li class="nav-item">
                     {{ $siteLanguages := .Site.Languages}}
                     {{ $pageLang := .Page.Lang}}
@@ -42,7 +42,6 @@
                     {{ end }}
                     {{ end }}
                     {{ end }}
-                </select>
             </li>
             {{ end }}
         </ul>
