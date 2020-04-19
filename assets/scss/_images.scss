@@ -23,7 +23,7 @@
   @include img-fluid;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .img-thumbnail {
     width: 100%;
   }
