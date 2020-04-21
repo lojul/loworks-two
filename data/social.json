@@ -1,5 +1,6 @@
 {
-	"facebook" : "https://facebook.com/uicardio",
-	"instagram" : "https://instagram.com/uicardio",
-	"whatsapp" : "#"
+  "facebook": "https://facebook.com/uicardio",
+  "instagram": "https://instagram.com/uicardio",
+  "whatsapp": "#",
+  "twitter": "https://api.whatsapp.com/send?phone=85293645244"
 }
