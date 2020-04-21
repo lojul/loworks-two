@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ $approach := $data.approach }}
 {{ $sectionPages := (where .Site.Pages.ByWeight "Section" "==" "approach") }}
-<section id="approach" class="py-5">
+<section id="approach" class="pt-5">
     <div class="container text-center">
         <h2 class="pt-5 h2">{{ $approach.title }}</h2>
         <p class="text-muted pb-3">{{ $approach.description }}</p>
