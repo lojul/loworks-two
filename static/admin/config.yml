@@ -28,6 +28,7 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: 'Logo', name: 'logo', widget: 'image', required: true }
           - {label: 'Favicon', name: 'favicon', widget: 'image', required: true }
+          - {label: 'Footer logo', name: 'footerlogo', widget: 'image', required: true }
           - {label: "Google Analyticse Code", name: "googleAnalytics", widget: "string" }
     - file: "data/en/nav.json"
       label: "Navigation EN"
