@@ -1,6 +1,6 @@
 ---
 image: /images/application.png
-title: Free Quote
-description: We provide free quote after fully understanding your vision
+title: Cutting Edge
+description: We leverage advanced technology to deliver solutions that exceed expectations.
 weight: 1
 ---
