@@ -9,7 +9,7 @@
             <div class="row text-center">
                 {{ range $sectionPages }}
                 {{if gt (len .Description) 8}}
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 pb-5">
                     <div class="mb-4 text-center"><img src="{{ .Params.Image }}" alt="{{ .Title }}" class="img-thumbnail-1 border-0" /></div>
                     <h4 class="pt-2">{{ .Title }}</h4>
                     <p class="ml-md-5 mr-md-5 ml-sm-0 mr-sm-0 text-muted">{{ .Params.Description }}</p>
