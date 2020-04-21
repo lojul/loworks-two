@@ -4,7 +4,7 @@
 {{ $nav := $data.nav }}
 <section id="footer">
 	<nav class="navbar navbar-expand-lg navbar-light bg-white">
-		<a class="navbar-brand" href="#"><img src="{{ $site.footerlogo | absURL }}" height="30px"></a>
+		<a class="navbar-brand mx-auto" href="#"><img src="{{ $site.footerlogo | absURL }}" height="30px"></a>
 		<div class="navbar-collapse" id="navbarCollapseFooter">
 			<ul class="navbar-nav">
 				<li class="nav-item align-self-center">
@@ -39,12 +39,13 @@
                 </li>
                 {{ end }}
             </ul>
-            <div class="d-flex justify-content-center mx-auto">
+
+            <span class="d-flex justify-content-center mx-auto pb-sm-2" style="padding: .5rem 1rem;">
                 {{ range $key, $value := .Site.Data.social }}
                 <a href="{{ $value }}" class="ml-2 btn-{{$key}}" target="_blank"><i class="fab fa-{{ $key }}"></i></a>
                 {{ end }}
-            </div>
-            <div class="d-flex justify-content-end justify-content-sm-center align-items-sm-center text-muted">{{ $footer.footertext }}</div>
+            </span>
+            <span class="d-flex text-muted">{{ $footer.footertext }}</span>
 			</div>
-    </nav>
+</nav>
 </section>
