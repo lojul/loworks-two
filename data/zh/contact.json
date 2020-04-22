@@ -1,13 +1,13 @@
 {
-  "title": "Contact",
-  "address" : "18XX, Sector 45 Delhi",
-  "phone" : "+91 720 626 XXXX",
-  "email" : "xxxxxx@gmail.com",
-  "addresstext" : "Address",
-  "emailtext" : "Email",
-  "phonetext" : "Phone",
-  "yourname" : "Name",
-  "youremail" : "Email",
-  "yourmessage" : "Message",
-  "submitbtn" : "Submit"
+  "addresstext": "Address",
+  "submitbtn": "提交",
+  "emailtext": "Email",
+  "youremail": "電郵地址",
+  "phone": "+91 720 626 XXXX",
+  "yourmessage": "請留言",
+  "address": "18XX, Sector 45 Delhi",
+  "title": "聯絡我們",
+  "phonetext": "Phone",
+  "email": "xxxxxx@gmail.com",
+  "yourname": "名稱"
 }
