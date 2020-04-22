@@ -100,9 +100,6 @@ collections:
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: "Address", name: "address", widget: "string", required: true }
-          - {label: "Phone", name: "phone", widget: "string", required: true }
-          - {label: "E-mail", name: "email", widget: "string", required: true }
           - {label: "Address text", name: "addresstext", widget: "string", required: true }
           - {label: "Email text", name: "emailtext", widget: "string", required: true }
           - {label: "phone text", name: "phonetext", widget: "string", required: true }
@@ -119,9 +116,6 @@ collections:
       fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: "Address", name: "address", widget: "string", required: true }
-          - {label: "Phone", name: "phone", widget: "string", required: true }
-          - {label: "E-mail", name: "email", widget: "string", required: true }
           - {label: "Address text", name: "addresstext", widget: "string", required: true }
           - {label: "Email text", name: "emailtext", widget: "string", required: true }
           - {label: "phone text", name: "phonetext", widget: "string", required: true }
