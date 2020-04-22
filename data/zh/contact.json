@@ -1,14 +1,14 @@
 {
   "addresstext": "Address",
-  "submitbtn": "Submit",
+  "submitbtn": "提交",
+  "placeholderemail": "Email",
   "emailtext": "Email",
-  "youremail": "Your Email",
-  "yourmessage": "Your Message",  
-  "title": "Contact Us",
+  "youremail": "您的電郵地址",
+  "yourmessage": "您的信息",
+  "placeholdermessage": "Message",
+  "title": "聯絡我們",
   "phonetext": "Phone",
   "email": "info@loworks.co",
-  "yourname": "Your Name",  
-  "placeholdername": "Name",
-  "placeholderemail": "Email",
-  "placeholdermessage": "Message"
+  "yourname": "您的名字",
+  "placeholdername": "Name"
 }
