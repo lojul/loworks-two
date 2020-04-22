@@ -110,6 +110,9 @@ collections:
           - {label: "Your Email text", name: "youremail", widget: "string", required: true }
           - {label: "Your Message text", name: "yourmessage", widget: "string", required: true }
           - {label: "Submit button Text", name: "submitbtn", widget: "string", required: true }
+          - {label: "Name Placeholder", name: "placeholdername", widget: "string", required: true }
+          - {label: "Email Placeholder", name: "placeholderemail", widget: "string", required: true }
+          - {label: "Message Placeholder", name: "placeholdermessage", widget: "string", required: true }
     - file: "data/zh/contact.json"
       label: "Contact ZH"
       name: "ContactZH"
@@ -126,6 +129,9 @@ collections:
           - {label: "Your Email text", name: "youremail", widget: "string", required: true }
           - {label: "Your Message text", name: "yourmessage", widget: "string", required: true }
           - {label: "Submit button Text", name: "submitbtn", widget: "string", required: true }
+          - {label: "Name Placeholder", name: "placeholdername", widget: "string", required: true }
+          - {label: "Email Placeholder", name: "placeholderemail", widget: "string", required: true }
+          - {label: "Message Placeholder", name: "placeholdermessage", widget: "string", required: true }
     - file: "data/en/footer.json"
       label: "Footer EN"
       name: "FooterEN"

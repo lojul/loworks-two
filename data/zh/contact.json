@@ -1,13 +1,14 @@
 {
   "addresstext": "Address",
-  "submitbtn": "提交",
+  "submitbtn": "Submit",
   "emailtext": "Email",
-  "youremail": "你的電郵地址",
-  "phone": "+91 720 626 XXXX",
-  "yourmessage": "你的留言",
-  "address": "18XX, Sector 45 Delhi",
-  "title": "聯絡我們",
+  "youremail": "Your Email",
+  "yourmessage": "Your Message",  
+  "title": "Contact Us",
   "phonetext": "Phone",
-  "email": "xxxxxx@gmail.com",
-  "yourname": "你的名稱"
+  "email": "info@loworks.co",
+  "yourname": "Your Name",  
+  "placeholdername": "Name",
+  "placeholderemail": "Email",
+  "placeholdermessage": "Message"
 }

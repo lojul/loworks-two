@@ -3,11 +3,12 @@
   "submitbtn": "Submit",
   "emailtext": "Email",
   "youremail": "Your Email",
-  "phone": "+91 720 626 XXXX",
-  "yourmessage": "Your Message",
-  "address": "18XX, Sector 45 Delhi",
+  "yourmessage": "Your Message",  
   "title": "Contact Us",
   "phonetext": "Phone",
   "email": "info@loworks.co",
-  "yourname": "Your Name"
+  "yourname": "Your Name",  
+  "placeholdername": "Name",
+  "placeholderemail": "Email",
+  "placeholdermessage": "Message"
 }
