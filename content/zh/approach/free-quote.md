@@ -1,6 +1,6 @@
 ---
-title: "Free Quote"
-description: "We provide free quote after fully understanding your vision"
-image: "/images/edit.png"
+image: /images/content.png
+title: 免費報價
+description: 我們將充分了解您的需求後提供免費報價
 weight: 1
 ---
