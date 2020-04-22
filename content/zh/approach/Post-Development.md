@@ -1,6 +1,6 @@
 ---
-title: "Post Development Services"
-description: "3-months free post development support"
-image: "/images/wrench.png"
-weight: 5
+image: /images/technical-support.png
+title: 開發後期服務
+description: 我們提供3個月的免費開發後技術支援
+weight: 6
 ---
