@@ -42,7 +42,7 @@
 
             <span class="d-flex justify-content-center mx-auto pb-sm-2" style="padding: .5rem 1rem;">
                 {{ range $key, $value := .Site.Data.social }}
-                <a href="{{ $value }}" class="ml-2 btn-{{$key}}" target="_blank"><i class="fab fa-{{ $key }}"></i></a>
+                <a href="{{ $value }}" class="ml-2 btn-{{$key}}" target="_blank"><i class="fab fa-{{ $key }} fa-lg"></i></a>
                 {{ end }}
             </span>
             <span class="d-flex text-muted" style="align-items: center;
