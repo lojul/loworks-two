@@ -1,6 +1,6 @@
 ---
 image: /images/application.png
-title: Cutting Edge
+title: Cutting Edge Technology
 description: We leverage advanced technology to deliver solutions that exceed expectations.
 weight: 4
 ---
