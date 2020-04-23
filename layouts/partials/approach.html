@@ -1,6 +1,6 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ $approach := $data.approach }}
-{{ $sectionPages := (where .Site.Pages.ByWeight "Section" "==" "approach") }}
+{{ $sectionPages := (where .Site.RegularPages.ByWeight "Section" "==" "approach") }}
 <section id="approach" class="pt-5">
     <div class="container text-center">
         <h2 class="pt-5 mb-5 h2">{{ $approach.title }}</h2>
@@ -8,13 +8,11 @@
         <div class="col-lg-12">
             <div class="row text-center">
                 {{ range $sectionPages }}
-                {{if gt (len .Description) 8}}
                 <div class="col-md-4 col-sm-6 pb-5">
                     <div class="mb-4 text-center"><img src="{{ .Params.Image }}" alt="{{ .Title }}" class="img-thumbnail-1 border-0" /></div>
                     <h4 class="pt-2">{{ .Title }}</h4>
                     <p class="ml-md-5 mr-md-5 ml-sm-0 mr-sm-0 text-muted">{{ .Params.Description }}</p>
                 </div>
-                {{end}}
                 {{ end }}
             </div>
         </div>

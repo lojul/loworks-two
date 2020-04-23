@@ -2,7 +2,7 @@
 {{ $services := $data.services }}
 {{ $title := $services.title }}
 {{ $description := $services.description }}
-{{ $sectionPages := (where .Site.Pages.ByWeight "Section" "==" "services") }}
+{{ $sectionPages := (where .Site.RegularPages.ByWeight "Section" "==" "services") }}
 <section id="features" class="bg-light py-5">
     <div class="container">
         <div class="row">
@@ -16,7 +16,6 @@
             </div>
             <div class="col-lg-7 col-12">
                 {{ range $sectionPages }}
-                {{if gt (len .Description) 8}}
                     <div class="row features bg-white shadow p-3 mb-3 rounded">
                         <div class="col-lg-2 col-12">
                             <div class="mb-4 text-center"><img src="{{ .Params.Image }}" alt="{{ .Title }}" class="img-thumbnail border-0"/></div>
@@ -26,7 +25,6 @@
                             <p style="font-size:14px;" class="text-muted">{{ .Params.Description }}</p>
                         </div>
                     </div>
-                {{ end }}
                 {{ end }}
             </div>
         </div>
